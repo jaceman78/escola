@@ -41,10 +41,7 @@ class LoginController extends BaseController
 		return view('LTE_login', $data);
 	}
 
-
-
-	
-	public function profile()
+		public function profile()
 	{
 		if(!session()->get("LoggedUserData"))
 		{
@@ -64,9 +61,9 @@ class LoginController extends BaseController
 			$googleService = new \Google_Service_Oauth2($this->googleClient);
 			$data = $googleService->userinfo->get();
 			$currentDateTime = date("Y-m-d H:i:s");
-			$email = $data->getEmail();
 
 			// Check if email domain is allowed
+			$email = $data->getEmail();			
 			$allowedDomains = array('@aejoaodebarros.pt');
 			$domain = substr(strrchr($email, "@"), 1);
 			if (!in_array('@' . $domain, $allowedDomains)) {
@@ -77,13 +74,12 @@ class LoginController extends BaseController
 
 			//echo "<pre>"; print_r($data);die;
 			$userdata=array();
-			if($this->userModel->isAlreadyRegister($data['id'])){					
-				$result = $this->userModel->where('oauth_id' ,$data['id'])->first();							
+			if($this->userModel->isAlreadyRegister($data['id'])){			
+				$result = $this->userModel->where('oauth_id' ,$data['id'])->first();
 									
-			
-				//User ALready Login and want to Login Again
+				//User Already Login and want to Login Again
 				$userdata = [
-					'name'=>$data['givenName']. " ".$data['familyName'], 
+					'name'=>$data['givenName']. " ".$data, 
 					'email'=>$data['email'] , 
 					'profile_img'=>$data['picture'], 
 					'updated_at'=>$currentDateTime,
@@ -91,8 +87,29 @@ class LoginController extends BaseController
 					'status'=>$data['status'] 
 				];
 				$this->userModel->updateUserData($userdata, $data['id']);
-			}else{
-				//new User want to Login
+			}else if($this->userModel->isAlreadyRegisteremail($data['email']))
+			{			
+				$result = $this->userModel->where('email' ,$data['email'])->first();
+									
+				//User ALready email introduced
+				$userdata = [
+					'oauth_id'=>$data['id'], //no googlee api p oauth_id é id
+					'name'=>$data['givenName']. " ".$data['familyName'], 
+					'email'=>$data['email'] , 
+					'profile_img'=>$data['picture'], 
+					'updated_at'=>$currentDateTime,
+					'level'=>$result->level,
+					'status'=>$data['status'] 
+				];
+				// echo "<pre>"; print_r($result->id);
+				// echo "<pre>"; print_r($userdata);die;
+			
+
+				$this->userModel->updateUserDataEmail($userdata, $result->id);
+
+			}
+			else{
+				//new User want to Login				
 				$userdata = [
 					'oauth_id'=>$data['id'],
 					'name'=>$data['givenName']. " ".$data['familyName'], 
@@ -104,6 +121,7 @@ class LoginController extends BaseController
 				];
 				$this->userModel->insertUserData($userdata);
 			}
+			
 			session()->set("LoggedUserData", $userdata);
 		}
 

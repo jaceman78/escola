@@ -23,8 +23,16 @@ class UserModel extends Model
 	function isAlreadyRegister($authid){
 		return $this->db->table('user')->getWhere(['oauth_id'=>$authid])->getRowArray()>0?true:false;
 	}
+		function isAlreadyRegisteremail($email){
+			return $this->db->table('user')->getWhere(['email'=>$email])->getRowArray()>0?true:false;
+		}
+
+
 	function updateUserData($userdata, $authid){
 		$this->db->table("user")->where(['oauth_id'=>$authid])->update($userdata);
+	}
+	function updateUserDataEmail($userdata, $id){
+		$this->db->table("user")->where(['email'=>$userdata['email']])->update($userdata);
 	}
 	function insertUserData($userdata){
 		$this->db->table("user")->insert($userdata);

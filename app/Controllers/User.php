@@ -49,12 +49,15 @@ class User extends BaseController
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';
+			$profile_img ="<img src='";
+			$profile_img.= $value->profile_img;
+			$profile_img.="'class='user-image img-circle elevation-2' alt='User Image'>";
 
 			$data['data'][$key] = array(
 				$value->oauth_id,
 				$value->name,
 				$value->email,
-				$value->profile_img,
+				$profile_img,
 				$value->level,
 
 				$ops				
@@ -87,14 +90,14 @@ class User extends BaseController
         $response = array();
 
 		$fields['id'] = $this->request->getPost('id');
-$fields['oauth_id'] = $this->request->getPost('oauth_id');
-$fields['name'] = $this->request->getPost('name');
-$fields['email'] = $this->request->getPost('email');
-$fields['profile_img'] = $this->request->getPost('profile_img');
-$fields['level'] = $this->request->getPost('level');
-$fields['status'] = $this->request->getPost('status');
-$fields['created_at'] = $this->request->getPost('created_at');
-$fields['updated_at'] = $this->request->getPost('updated_at');
+		$fields['oauth_id'] = $this->request->getPost('oauth_id');
+		$fields['name'] = $this->request->getPost('name');
+		$fields['email'] = $this->request->getPost('email');
+		$fields['profile_img'] = $this->request->getPost('profile_img');
+		$fields['level'] = $this->request->getPost('level');
+		$fields['status'] = $this->request->getPost('status');
+		$fields['created_at'] = $this->request->getPost('created_at');
+		$fields['updated_at'] = $this->request->getPost('updated_at');
 
 
         $this->validation->setRules([
@@ -137,14 +140,14 @@ $fields['updated_at'] = $this->request->getPost('updated_at');
         $response = array();
 		
 		$fields['id'] = $this->request->getPost('id');
-$fields['oauth_id'] = $this->request->getPost('oauth_id');
-$fields['name'] = $this->request->getPost('name');
-$fields['email'] = $this->request->getPost('email');
-$fields['profile_img'] = $this->request->getPost('profile_img');
-$fields['level'] = $this->request->getPost('level');
-$fields['status'] = $this->request->getPost('status');
-$fields['created_at'] = $this->request->getPost('created_at');
-$fields['updated_at'] = $this->request->getPost('updated_at');
+		$fields['oauth_id'] = $this->request->getPost('oauth_id');
+		$fields['name'] = $this->request->getPost('name');
+		$fields['email'] = $this->request->getPost('email');
+		$fields['profile_img'] = $this->request->getPost('profile_img');
+		$fields['level'] = $this->request->getPost('level');
+		$fields['status'] = $this->request->getPost('status');
+		$fields['created_at'] = $this->request->getPost('created_at');
+		$fields['updated_at'] = $this->request->getPost('updated_at');
 
 
         $this->validation->setRules([

@@ -17,7 +17,7 @@ class TurmasModel extends Model {
 	protected $deletedField  = 'deleted_at';
 	protected $validationRules    = [];
 	protected $validationMessages = [];
-	protected $skipValidation     = true;    
+	protected $skipValidation     = true;     
 
 	public function getTurmasComAnosLetivos()
     {

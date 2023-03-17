@@ -7,7 +7,7 @@ class UserController extends BaseController
     public function index()
     {
         $data['pageTitle']= "Início";
-        return view('dashboard/home',$data);
+        return view('dashboard/home',$data); 
     }
 
     public function profile()

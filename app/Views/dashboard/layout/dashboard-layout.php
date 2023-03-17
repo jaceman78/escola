@@ -379,9 +379,9 @@
                       </a>
                  </li>
                   <li class="nav-item">
-                    <a href="<?php echo site_url(); ?>user/home" class="nav-link">
+                    <a href="" class="nav-link">
                       <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em">Inserir</p>
+                      <p style="padding-left:1em">xxxx</p>
                     </a>
               </li>
               </ul>  
@@ -549,6 +549,8 @@
 
 
   <script type="text/javascript">
+
+console.log("rere");
   const url = window.location;
   /*remove all active and menu open classes(collapse)*/
   $('ul.nav-sidebar a').removeClass('active').parent().siblings().removeClass('menu-open');
