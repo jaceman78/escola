@@ -1,0 +1,430 @@
+INFO - 2023-03-21 09:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:15:07 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:15:08 --> Object of class Google\Service\Oauth2\Userinfo could not be converted to string
+in APPPATH\Controllers\LoginController.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:16:40 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:16:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:16:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-21 09:16:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:16:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:21:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:21:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-21 09:25:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:25:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-21 09:25:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:25:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-21 09:29:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:29:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-21 09:32:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:32:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:32:50 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 09:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 09:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 09:34:13 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 09:34:13 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:21:34 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:22:12 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 10:22:13 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginController.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:26:16 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:26:35 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:27:33 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:28:25 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:31:16 --> Undefined variable $result
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:31:41 --> Undefined variable $session
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:31:44 --> Undefined variable $session
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:31:59 --> Undefined variable $LoggedUserData
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $LoggedUserData', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:38:21 --> Undefined variable $LoggedUserData
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $LoggedUserData', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:38:41 --> Undefined variable $LoggedUserData
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $LoggedUserData', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:38:52 --> Undefined variable $session
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 10:50:14 --> Undefined variable $session
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 117.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 6 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:50:32 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 10:50:33 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginController.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:51:21 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-21 10:51:22 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginController.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:51:59 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 10:56:42 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 10:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 10:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 11:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-21 16:55:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 94.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/user', [], true)
+ 6 APPPATH\Controllers\User.php(31): view('dashboard/user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 16:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 16:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-21 16:55:44 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-21 16:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-21 16:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

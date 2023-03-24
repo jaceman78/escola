@@ -77,7 +77,7 @@ class Turmas extends BaseController
 			$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
 			$ops .= '<div class="dropdown-menu">';
 			$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_turma .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
-			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
+			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
@@ -110,7 +110,7 @@ class Turmas extends BaseController
 		$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
 		$ops .= '<div class="dropdown-menu">';
 		$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_turma .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
-		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
+		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 		$ops .= '<div class="dropdown-divider"></div>';
 		$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
@@ -143,7 +143,7 @@ class Turmas extends BaseController
 		$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
 		$ops .= '<div class="dropdown-menu">';
 		$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_turma .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
-		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
+		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 		$ops .= '<div class="dropdown-divider"></div>';
 		$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
@@ -178,6 +178,7 @@ class Turmas extends BaseController
 			$ops .= '<div class="dropdown-menu">';
 			$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_turma .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
 			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
+			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';

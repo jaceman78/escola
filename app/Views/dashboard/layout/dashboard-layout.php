@@ -92,6 +92,7 @@
       <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
           <img src="<?=session()->get("LoggedUserData")['profile_img'];  ?>" class="user-image img-circle elevation-2" alt="User Image">
+          
           <span class="d-none d-md-inline"><?=session()->get("LoggedUserData")['name']?session()->get("LoggedUserData")['name']:"";  ?></span>
         </a>
         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -114,7 +115,7 @@
                 <a href="#">Alunos</a>
               </div>
               <div class="col-4 text-center">
-                <a href="#"><?=session()->get("LoggedUserData")['level']?session()->get("LoggedUserData")['level']:"";  ?></a>
+                <a href="#"><?=session()->get("LoggedUserData")['level'];  ?></a>
               </div>
             </div>
             <!-- /.row -->

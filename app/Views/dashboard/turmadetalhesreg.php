@@ -5,39 +5,13 @@ $this->section('content');
 
 
 <!-- Main content -->
-      <div class="card">
-        <div class="card-header">
-          <div class="row">
-            <div class="col-8 mt-2">
-              <h3 class="card-title">Turmas</h3>
-            </div>
-            <div class="col-2">
-              <select id="anoletivofiltro_id" name="anoletivo_id" class="form-select float-left" required>   </select>
-              </div>
-               <div class="col-2">
-              <button type="button" class="btn float-right btn-success" onclick="save()" title="<?= lang("App.new") ?>"> <i class="fa fa-plus"></i>   <?= lang('App.new') ?></button>
-            </div>
-          </div>
-        </div>
-        <!-- /.card-header -->
-        <div class="card-body">
-          <table id="data_table" class="table table-bordered table-striped">
-            <thead>
-              <tr>
-              <th>Id turma</th>
-              <th>Ano Escolar</th>
-              <th>Nome</th>
-              <th>Ano Letivo</th>
-              <th>Tipologia</th>
-			        <th></th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-        <!-- /.card-body -->
-      </div>
-      <!-- /.card -->
-     
+
+
+
+<div id="card-container"></div>
+
+
+
 
 
 
@@ -53,40 +27,25 @@ $this->section('content');
       <div class="modal-body">
         <form id="data-form" class="pl-3 pr-3">
           <div class="row">
-          <input type="hidden" id="id_turma" name="id_turma" class="form-control" placeholder="Id turma" maxlength="11" required>
+            <input type="hidden" id="id_turmaprofessor" name="id_turmaprofessor" class="form-control" placeholder="Id turmaprofessor" maxlength="11" required>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group mb-3">
-									<label for="ano" class="col-form-label"> Ano Escolar: </label>
-									<input type="number" id="ano" name="ano" class="form-control" placeholder="Ano Escolar" minlength="0"  maxlength="11" >
+									<label for="turma_id" class="col-form-label"> Turma id: <span class="text-danger">*</span> </label>
+									<input type="number" id="turma_id" name="turma_id" class="form-control" placeholder="Turma id" minlength="0"  maxlength="11" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group mb-3">
-									<label for="nome" class="col-form-label"> Nome: </label>
-									<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" minlength="0"  maxlength="63" >
+									<label for="user_id" class="col-form-label"> User id: <span class="text-danger">*</span> </label>
+									<input type="number" id="user_id" name="user_id" class="form-control" placeholder="User id" minlength="0"  maxlength="11" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group mb-3">
-									<label for="anoletivo_id" class="col-form-label"> Ano Letivo: <span class="text-danger">*</span> </label>
-									<select id="anoletivo_id" name="anoletivo_id" class="form-select" required>
-                  <option value="select1">select1</option>
-                  <option value="select2">select2</option>
-									<option value="select3">select3</option>
-                                    
-									</select>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group mb-3">
-									<label for="tipologia_id" class="col-form-label"> Tipologia: <span class="text-danger">*</span> </label>
-									<select id="tipologia_id" name="tipologia_id" class="form-select" required>
-										<option value="select1">select1</option>
-										<option value="select2">select2</option>
-										<option value="select3">select3</option>
-									</select>
+									<label for="status" class="col-form-label"> Status: </label>
+									<input type="number" id="status" name="status" class="form-control" placeholder="Status" minlength="0"  maxlength="11" >
 								</div>
 							</div>
 						</div>
@@ -114,79 +73,84 @@ $this->section('content');
 <?= $this->section("pageScript") ?>
 <script>
 
-// Inicio - preenchimento dos selects
-$.get('/obter-dados-anoletivo', function (data) {
-  var options = '';
-  
-    $.each(data, function (i, item) {          
-      options += data[i] + '">' + data[i+1] ;
-                    i++;
+// seleciona a lista existente a adiciona dinamicamente um novo item
+let lista = document.querySelector('ul[name="itemturmaprofissinal"]');
+// cria um novo elemento li
+let novoItem = document.createElement('li');
+novoItem.classList.add('nav-item');
+// cria um novo elemento a
+let novoLink = document.createElement('a');
+novoLink.classList.add('nav-link');
+novoLink.setAttribute('href', window.location.href);
+// cria um novo elemento i
+let novoIcon = document.createElement('i');
+novoIcon.classList.add('fas', 'fa-dot-circle', 'nav-icon');
+novoIcon.style.paddingLeft = '1em';
+// cria um novo elemento p
+let novoTexto = document.createElement('p');
+novoTexto.innerText = 'Detalhes da turma';
+novoTexto.style.paddingLeft= '1em';
+
+// adiciona o elemento i ao elemento a
+novoLink.appendChild(novoIcon);
+// adiciona o elemento p ao elemento a
+novoLink.appendChild(novoTexto);
+// adiciona o elemento a ao elemento li
+novoItem.appendChild(novoLink);
+// adiciona o novo elemento li à lista existente
+lista.appendChild(novoItem);    
+
+
+
+$(document).ready(function() {
+    var id_turma = "<?php echo $idturma; ?>";
+    $.ajax({
+        url: "/turmadisciplina/getTurmasDisciplinas/" + id_turma,
+        type: "POST",
+        dataType: "json",
+        success: function(data) {
+            var cards = "";
+            data.forEach(function(turmaDisciplina) {
+                cards += '<div class="card">';
+                cards += '<div class="card-header">' + turmaDisciplina.disciplina_id + '</div>';
+                cards += '<div class="card-body">';
+                cards += '<h5 class="card-title">' + turmaDisciplina.turma_id + '</h5>';
+                cards += '<p class="card-text">' + turmaDisciplina.carga_horaria + '</p>';
+                cards += '</div>';
+                cards += '</div>';
+            });
+            $('#card-container').html(cards);
+        }
     });
-
-    $('#anoletivofiltro_id').html(options);
 });
 
 
-$.get('/obter-dados-anoletivo', function (data) {
-  var options = '';
-  
-    $.each(data, function (i, item) {          
-      options += data[i] + '">' + data[i+1] ;
-                    i++;
-    });
 
-    $('#anoletivo_id').html(options);
-});
 
-$.get('/obter-dados-tipologia', function (data) {
-    var options =  '<option value="1">Regular</option>';
-  
-    // $.each(data, function (i, item) {     
-    //   options += data[i] + '">' + data[i+1] ;
-    //                 i++;
-    // });
 
-    $('#tipologia_id').html(options);
-});
-
-// Fim - preenchimento dos selects
 
 
   // dataTables
-  $(function() {
-    var table = $('#data_table').removeAttr('width').DataTable({
-      "language":{
-        "url": "https://cdn.datatables.net/plug-ins/1.13.2/i18n/pt-PT.json"
-      },
-      "paging": true,
-      "lengthChange": false,
-      "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "scrollY": '45vh',
-      "scrollX": true,
-      "scrollCollapse": false,
-      "responsive": true,
-      "ajax": {
-        "url": '<?php echo base_url($controller . "/getAllregular") ?>',
-        "type": "POST",
-        "dataType": "json",
-        async: "true"
-      }
-    });
- // $anoletivoescolhido=$(this).val();  
- //    var options= "<option value=" + $(this).val() + 'selected>'+ $(this).val() + '</option>';
-    //  $('#anoletivomodal_id').html(options); 
-
-    $("#anoletivofiltro_id").on("change", function(){ 
-      $myurl ='<?php echo base_url($controller . "/getAllporAnoletivo") ?>/'
-       $myurl +=$(this).val();
-       $myurl+='/<?=$tipologia?>';
-
-      table.ajax.url($myurl).load();
-    });
-  });
+  // $(function() {
+  //   var table = $('#data_table').removeAttr('width').DataTable({
+  //     "paging": true,
+  //     "lengthChange": false,
+  //     "searching": true,
+  //     "ordering": true,
+  //     "info": true,
+  //     "autoWidth": false,
+  //     "scrollY": '45vh',
+  //     "scrollX": true,
+  //     "scrollCollapse": false,
+  //     "responsive": false,
+  //     "ajax": {
+  //       "url": '<?php // echo base_url($controller . "/getAll") ?>',
+  //       "type": "POST",
+  //       "dataType": "json",
+  //       async: "true"
+  //     }
+  //   });
+  // });
 
   var urlController = '';
   var submitText = '';
@@ -199,11 +163,11 @@ $.get('/obter-dados-tipologia', function (data) {
     return submitText;
   }
 
-  function save(id_turma) {
+  function save(id_turmaprofessor) {
     // reset the form 
     $("#data-form")[0].reset();
     $(".form-control").removeClass('is-invalid').removeClass('is-valid');
-    if (typeof id_turma === 'undefined' || id_turma < 1) { //add
+    if (typeof id_turmaprofessor === 'undefined' || id_turmaprofessor < 1) { //add
       urlController = '<?= base_url($controller . "/add") ?>';
       submitText = '<?= lang("App.save") ?>';
       $('#model-header').removeClass('bg-info').addClass('bg-success');
@@ -217,7 +181,7 @@ $.get('/obter-dados-tipologia', function (data) {
         url: '<?php echo base_url($controller . "/getOne") ?>',
         type: 'post',
         data: {
-          id_turma: id_turma
+          id_turmaprofessor: id_turmaprofessor
         },
         dataType: 'json',
         success: function(response) {
@@ -226,11 +190,10 @@ $.get('/obter-dados-tipologia', function (data) {
           $("#form-btn").text(submitText);
           $('#data-modal').modal('show');
           //insert data to form
-          $("#data-form #id_turma").val(response.id_turma);
-          $("#data-form #ano").val(response.ano);
-          $("#data-form #nome").val(response.nome);
-          $("#data-form #anoletivo_id").val(response.anoletivo_id);
-          $("#data-form #tipologia_id").val(response.tipologia_id);
+          			$("#data-form #id_turmaprofessor").val(response.id_turmaprofessor);
+			$("#data-form #turma_id").val(response.turma_id);
+			$("#data-form #user_id").val(response.user_id);
+			$("#data-form #status").val(response.status);
 
         }
       });
@@ -298,7 +261,7 @@ $.get('/obter-dados-tipologia', function (data) {
               } else {
                 Swal.fire({
                   toast: false,
-                  position: 'top-center',
+                  position: 'bottom-end',
                   icon: 'error',
                   title: response.messages,
                   showConfirmButton: false,
@@ -323,7 +286,7 @@ $.get('/obter-dados-tipologia', function (data) {
 
 
 
-  function remove(id_turma) {
+  function remove(id_turmaprofessor) {
     Swal.fire({
       title: "<?= lang("App.remove-title") ?>",
       text: "<?= lang("App.remove-text") ?>",
@@ -340,7 +303,7 @@ $.get('/obter-dados-tipologia', function (data) {
           url: '<?php echo base_url($controller . "/remove") ?>',
           type: 'post',
           data: {
-            id_turma : id_turma
+            id_turmaprofessor : id_turmaprofessor
           },
           dataType: 'json',
           success: function(response) {

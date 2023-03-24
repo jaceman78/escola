@@ -82,8 +82,9 @@ novoIcon.classList.add('fas', 'fa-dot-circle', 'nav-icon');
 novoIcon.style.paddingLeft = '1em';
 // cria um novo elemento p
 let novoTexto = document.createElement('p');
-novoTexto.innerText = 'Addicionar Disciplina';
+novoTexto.innerText = 'Adicionar Disciplina';
 novoTexto.style.paddingLeft= '1em';
+
 // adiciona o elemento i ao elemento a
 novoLink.appendChild(novoIcon);
 // adiciona o elemento p ao elemento a
@@ -137,7 +138,7 @@ $(document).ready(function() {
       "scrollY": '45vh',
       "scrollX": true,
       "scrollCollapse": false,
-      "responsive": false,
+      "responsive": true,
       "ajax": {
         "url": '<?php echo base_url($controller . "/getAllTurmadisciplina/".$idturma) ?>',
         "type": "POST",

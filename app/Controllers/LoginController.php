@@ -76,10 +76,10 @@ class LoginController extends BaseController
 			$userdata=array();
 			if($this->userModel->isAlreadyRegister($data['id'])){			
 				$result = $this->userModel->where('oauth_id' ,$data['id'])->first();
-									
+				//echo "<pre>"; print_r($result);	
 				//User Already Login and want to Login Again
 				$userdata = [
-					'name'=>$data['givenName']. " ".$data, 
+					'name'=>$result->name, 
 					'email'=>$data['email'] , 
 					'profile_img'=>$data['picture'], 
 					'updated_at'=>$currentDateTime,
@@ -91,9 +91,9 @@ class LoginController extends BaseController
 			{			
 				$result = $this->userModel->where('email' ,$data['email'])->first();
 									
-				//User ALready email introduced
+				//User Already email introduced
 				$userdata = [
-					'oauth_id'=>$data['id'], //no googlee api p oauth_id é id
+					'oauth_id'=>$data['id'], //no googlee api o oauth_id é id
 					'name'=>$data['givenName']. " ".$data['familyName'], 
 					'email'=>$data['email'] , 
 					'profile_img'=>$data['picture'], 

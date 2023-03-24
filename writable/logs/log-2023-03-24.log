@@ -1,0 +1,1123 @@
+INFO - 2023-03-24 15:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 15:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:25:21 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:34:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:34:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:34:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 15:34:39 --> Undefined variable $id_turma
+in APPPATH\Views\dashboard\turmadetalhesreg.php on line 106.
+ 1 APPPATH\Views\dashboard\turmadetalhesreg.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_turma', 'APPPATH\\Views\\dashboard\\turmadetalhesreg.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\turmadetalhesreg.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/turmadetalhesreg', [], true)
+ 5 APPPATH\Controllers\Turmadisciplina.php(70): view('dashboard/turmadetalhesreg', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->turmadetalhes('41')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:35:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:35:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:36:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:36:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:36:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:37:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:40:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:40:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:40:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:40:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:44:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:45:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:46:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 15:46:54 --> Undefined variable $value
+in APPPATH\Controllers\Turmadisciplina.php on line 108.
+ 1 APPPATH\Controllers\Turmadisciplina.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Controllers\\Turmadisciplina.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:47:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:47:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:47:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:47:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:48:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 15:48:50 --> mysqli_sql_exception: Unknown table 'escola.user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 15:48:50 --> Unknown table 'escola.user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `user`.*
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `disciplina_id` = :disciplina_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:52:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 15:52:45 --> mysqli_sql_exception: Unknown table 'escola.user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 15:52:45 --> Unknown table 'escola.user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `user`.*
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `disciplina_id` = :disciplina_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:53:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:53:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:53:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:53:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 15:53:34 --> mysqli_sql_exception: Unknown table 'escola.user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 15:53:34 --> Unknown table 'escola.user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `user`.*
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `disciplina_id` = :disciplina_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(106): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:55:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:55:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:55:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:56:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:56:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:56:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:56:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:57:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:57:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:57:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:58:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:58:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:58:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 15:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 15:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:58:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:58:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:59:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:59:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 15:59:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 15:59:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 15:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 16:00:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:05:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:08:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:09:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:09:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:10:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:12:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:12:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 16:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 16:12:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:17:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 16:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 16:17:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:20:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 16:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 16:20:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:21:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 16:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 16:21:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:22:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:23:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:24:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:24:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:24:44 --> mysqli_sql_exception: Unknown column 'user.id' in 'field list' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:24:44 --> Unknown column 'user.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`id`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:25:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:25:37 --> mysqli_sql_exception: Unknown column 'user.name' in 'field list' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:25:37 --> Unknown column 'user.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:26:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:28:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:29:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 16:29:51 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::join(), 1 passed in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php on line 30 and at least 2 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 617.
+ 1 APPPATH\Models\TurmadisciplinaModel.php(30): CodeIgniter\Database\BaseBuilder->join('user')
+ 2 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:30:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:30:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id*`)
+WHERE `turma_id` = '41'' at line 4 in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:30:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id*`)
+WHERE `turma_id` = '41'' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` USING (`user`.`id*`)
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:31:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:31:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`)
+WHERE `turma_id` = '41'' at line 4 in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:31:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`)
+WHERE `turma_id` = '41'' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` USING (`user`.`id`)
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:31:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:34:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:34:21 --> mysqli_sql_exception: Unknown column 'user.name' in 'field list' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:34:21 --> Unknown column 'user.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:34:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:34:34 --> mysqli_sql_exception: Unknown column 'user.name' in 'field list' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:34:34 --> Unknown column 'user.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM `turmadisciplina`
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:34:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:34:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:34:56 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:34:56 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM (`turmadisciplina`, `user`)
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` ON `user`.`id`= `user_id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:36:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:36:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 16:36:25 --> Undefined constant "App\Models\user_id"
+in APPPATH\Models\TurmadisciplinaModel.php on line 33.
+ 1 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:36:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:37:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:41:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:41:32 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:41:32 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM (`turmadisciplina`, `user`)
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` ON `user`.`id`= `turmadisciplina`.`user_id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:50:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:50:46 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:50:46 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM (`turmadisciplina`, `user`)
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` ON `user`.`id`= `turmadisciplina`.`user_id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:51:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:51:16 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:51:16 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.*
+FROM (`turmadisciplina`, `user`)
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` ON `user`.`id`= `turmadisciplina`.`user_id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:52:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:52:19 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:52:19 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM (`turmadisciplina`, `user`)
+JOIN `turma` ON `turmadisciplina`.`turma_id`=`turma`.`id_turma`
+JOIN `user` ON `turmadisciplina`.`user_id`=`user`.`id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:53:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 16:53:13 --> mysqli_sql_exception: Not unique table/alias: 'user' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmadi...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmadi...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmadi...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadi...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-03-24 16:53:13 --> Not unique table/alias: 'user'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmadisciplina`.*, `turma`.`ano`, `turma`.`nome`, `user`.`name`
+FROM (`turmadisciplina`, `user`)
+JOIN `user` ON `turmadisciplina`.`user_id`=`user`.`id`
+WHERE `turma_id` = :turma_id:', [...], false)
+ 2 APPPATH\Models\TurmadisciplinaModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmadisciplina.php(103): App\Models\TurmadisciplinaModel->findAllporTurma('41')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmadisciplina->getTurmasDisciplinas('41')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmadisciplina))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:55:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 16:58:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

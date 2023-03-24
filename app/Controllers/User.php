@@ -51,14 +51,15 @@ class User extends BaseController
 			$ops .= '</div></div>';
 			$profile_img ="<img src='";
 			$profile_img.= $value->profile_img;
-			$profile_img.="'class='user-image img-circle elevation-2' alt='User Image'>";
+			$profile_img.="'class='user-image  img-circle elevation-2' style='width: 45px; height: 45px;' alt='User Image'>";
 
 			$data['data'][$key] = array(
 				$value->oauth_id,
 				$value->name,
 				$value->email,
-				$profile_img,
+				$value->grupo_id,
 				$value->level,
+				$profile_img,
 
 				$ops				
 			);

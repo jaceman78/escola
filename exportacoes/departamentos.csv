@@ -1,0 +1,42 @@
+id;nomedepartamento;status;;
+100;Educação Pré-Escolar;1;;
+110;Ensino Básico - 1º Ciclo;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('110','Ensino Básico - 1º Ciclo','1')
+120;Inglês;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('120','Inglês','1')
+200;Português e Estudos Sociais/História;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('200','Português e Estudos Sociais/História','1')
+210;Português e Francês;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('210','Português e Francês','1')
+220;Português e Inglês;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('220','Português e Inglês','1')
+230;Matemática e Ciências da Natureza;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('230','Matemática e Ciências da Natureza','1')
+240;Educação Visual e Tecnológica;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('240','Educação Visual e Tecnológica','1')
+250;Educação Musical;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('250','Educação Musical','1')
+260;Educação Física;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('260','Educação Física','1')
+290;Educação Moral e Religiosa;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('290','Educação Moral e Religiosa','1')
+300;Português;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('300','Português','1')
+310;Latim e Grego;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('310','Latim e Grego','1')
+320;Francês;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('320','Francês','1')
+330;Inglês;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('330','Inglês','1')
+340;Alemão;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('340','Alemão','1')
+350;Espanhol;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('350','Espanhol','1')
+400;História;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('400','História','1')
+410;Filosofia;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('410','Filosofia','1')
+420;Geografia;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('420','Geografia','1')
+430;Economia e Contabilidade;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('430','Economia e Contabilidade','1')
+500;Matemática;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('500','Matemática','1')
+510;Física e Química;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('510','Física e Química','1')
+520;Biologia e Geologia;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('520','Biologia e Geologia','1')
+530;Educação Tecnológica;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('530','Educação Tecnológica','1')
+540;Electrotecnia;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('540','Electrotecnia','1')
+550;Informática;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('550','Informática','1')
+560;Ciências Agro-pecuárias;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('560','Ciências Agro-pecuárias','1')
+600;Artes Visuais;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('600','Artes Visuais','1')
+610;Música;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('610','Música','1')
+620;Educação Física;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('620','Educação Física','1')
+360;Língua Gestual Portuguesa;1;;INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('360','Língua Gestual Portuguesa','1')
+910;"Educação Especial
+- apoio a crianças e jovens com graves problemas cognitivos, com graves problemas motores, com graves perturbações da personalidade ou da conduta, com multideficiência e para o apoio em intervenção precoce na infância.";1;;"INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('910','Educação Especial
+- apoio a crianças e jovens com graves problemas cognitivos, com graves problemas motores, com graves perturbações da personalidade ou da conduta, com multideficiência e para o apoio em intervenção precoce na infância.','1')"
+920;"Educação Especial
+- apoio a crianças e jovens com surdez moderada, severa ou profunda, com graves problemas de comunicação, linguagem ou fala.";1;;"INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('920','Educação Especial
+- apoio a crianças e jovens com surdez moderada, severa ou profunda, com graves problemas de comunicação, linguagem ou fala.','1')"
+930;"Educação Especial
+- apoio educativo a crianças e jovens com cegueira ou baixa visão.";1;;"INSERT INTO 'departamentos' ('cod_departamento', 'nomedepartamento', 'status')   VALUES ('930','Educação Especial
+- apoio educativo a crianças e jovens com cegueira ou baixa visão.','1')"

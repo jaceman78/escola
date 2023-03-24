@@ -19,28 +19,24 @@ class Turmadisciplina extends BaseController
 	public function __construct()
 	{
 	    $this->turmadisciplinaModel = new TurmadisciplinaModel();
-		$this->turmasModel = new TurmasModel();
-		
-       	$this->validation =  \Config\Services::validation();
-		
+		$this->turmasModel = new TurmasModel();		
+       	$this->validation =  \Config\Services::validation();	
 	}
 	
 	public function index()
 	{
-
 	    $data = [
                 'controller'    	=> 'turmadisciplina',
                 'title'     		=> 'turmadisciplina'				
-			];
-		
-		return view('turmadisciplina', $data);
-			
+			];		
+		return view('turmadisciplina', $data);			
 	}
+
+
 	public function indexporturma($id_turma)
 	{
 		$result = $this->turmadisciplinaModel->findAllporTurma($id_turma);
-		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();
-		
+		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();		
 
 	    $data = [
 			'controller'    	=> 'turmadisciplina',
@@ -52,8 +48,26 @@ class Turmadisciplina extends BaseController
 			'tipo'				=> $resultturma->tipologia_id
 
 			];
+
+		return view('dashboard/turmadisciplina', $data,);			
+	}
+
+
+
+	public function turmadetalhes($id_turma)	{
+		//$result = $this->turmadisciplinaModel->findAllporTurma($id_turma);
+		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();
+	    $data = [
+			'controller'    	=> 'turmadisciplina',
+			'title'     		=> 'Detalhes da turma'	,
+			'pageTitle'			=> 'Detalhes da turma '	,		
+			'idturma'			=> $id_turma,
+			'ano'				=> $resultturma->ano,
+			'nomedaturma'       => $resultturma->nome,
+			'tipo'				=> $resultturma->tipologia_id
+			];
 		
-		return view('dashboard/turmadisciplina', $data);			
+		return view('dashboard/turmadetalhesreg', $data);			
 	}
 
 
@@ -61,10 +75,8 @@ class Turmadisciplina extends BaseController
 	{
  		$response = $data['data'] = array();	
 
-		$result = $this->turmadisciplinaModel->select()->findAll();
-		
-		foreach ($result as $key => $value) {
-							
+		$result = $this->turmadisciplinaModel->select()->findAll();		
+		foreach ($result as $key => $value) {							
 			$ops = '<div class="btn-group">';
 			$ops .= '<button type="button" class=" btn btn-sm dropdown-toggle btn-info" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
 			$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
@@ -74,12 +86,10 @@ class Turmadisciplina extends BaseController
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turmadisciplina .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';
-
 			$data['data'][$key] = array(
 			$value->turma_id,
             $value->disciplina_id,
             $value->carga_horaria,
-
 				$ops				
 			);
 		} 
@@ -88,15 +98,20 @@ class Turmadisciplina extends BaseController
 	}
 
 
+	public function getTurmasDisciplinas($id_turma) //cards lista todos os detalhes da turma/disciplina
+	{
+	$data = $this->turmadisciplinaModel->findAllporTurma($id_turma);	
+	//echo "<pre>"; print_r($data);
+	return $this->response->setJSON($data);
+	}
+
+
 
     public function getAllTurmadisciplina($turma_id)
 	{
- 		$response = $data['data'] = array();	
-
-		$result = $this->turmadisciplinaModel->findAllporTurma($turma_id);
-		
-		foreach ($result as $key => $value) {
-							
+ 		$response = $data['data'] = array();
+		$result = $this->turmadisciplinaModel->findAllporTurma($turma_id);		
+		foreach ($result as $key => $value) {							
 			$ops = '<div class="btn-group">';
 			$ops .= '<button type="button" class=" btn btn-sm dropdown-toggle btn-info" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
 			$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
@@ -106,13 +121,11 @@ class Turmadisciplina extends BaseController
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turmadisciplina .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';
-
 			$data['data'][$key] = array(
 			$value->turma_id,
             $value->disciplina_id,
             $value->carga_horaria,
-
-				$ops				
+			$ops				
 			);
 		} 
 
@@ -121,20 +134,14 @@ class Turmadisciplina extends BaseController
 	
 	public function getOne()
 	{
- 		$response = array();
-		
-		$id = $this->request->getPost('id_turmadisciplina');
-		
-		if ($this->validation->check($id, 'required|numeric')) {
-			
-			$data = $this->turmadisciplinaModel->where('id_turmadisciplina' ,$id)->first();
-			
-			return $this->response->setJSON($data);	
-				
+ 		$response = array();		
+		$id = $this->request->getPost('id_turmadisciplina');		
+		if ($this->validation->check($id, 'required|numeric')) {			
+			$data = $this->turmadisciplinaModel->where('id_turmadisciplina' ,$id)->first();			
+			return $this->response->setJSON($data);					
 		} else {
 			throw new \CodeIgniter\Exceptions\PageNotFoundException();
-		}	
-		
+		}			
 	}	
 
 	public function add()
@@ -213,30 +220,6 @@ class Turmadisciplina extends BaseController
 			$response['messages'] = lang("vazio") ;
 		}
 
-
-
-
-			
-
-        // if ($this->validation->run($fields) == FALSE) {
-
-        //     $response['success'] = false;
-		// 	$response['messages'] = $this->validation->getErrors();//Show Error in Input Form
-			
-        // } else {
-
-        //     if ($this->turmadisciplinaModel->insert($fields)) {
-												
-        //         $response['success'] = true;
-        //         $response['messages'] = lang("App.insert-success") ;	
-				
-        //     } else {
-				
-        //         $response['success'] = false;
-        //         $response['messages'] = lang("App.insert-error") ;
-				
-        //     }
-        // }
 		
         return $this->response->setJSON($response);
 	}

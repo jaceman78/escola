@@ -20,9 +20,9 @@
             <thead>
               <tr>
               <th>Id turmaprofessor</th>
-<th>Turma id</th>
-<th>User id</th>
-<th>Status</th>
+              <th>Turma id</th>
+              <th>User id</th>
+              <th>Status</th>
 
 			  <th></th>
               </tr>

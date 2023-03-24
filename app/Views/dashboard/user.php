@@ -21,13 +21,14 @@ $this->section('content');
           <table id="data_table" class="table table-bordered table-striped">
             <thead>
               <tr>
-              <th>Oauth id</th>
+                <th>Oauth id</th>
                 <th>Nome</th>
-                <th>Email</th>
-                <th>Profile img</th>
+                <th>E mail</th>
+                <th>Grupo</th>
                 <th>Level</th>
-
-			  <th></th>
+                <th>Foto</th>
+                
+			        <th></th>
               </tr>
             </thead>
           </table>
@@ -48,7 +49,7 @@ $this->section('content');
       <div class="modal-body">
         <form id="data-form" class="pl-3 pr-3">
           <div class="row">
-<input type="hidden" id="id" name="id" class="form-control" placeholder="Id" maxlength="11" required>
+          <input type="hidden" id="id" name="id" class="form-control" placeholder="Id" maxlength="11" required>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
@@ -126,6 +127,9 @@ $this->section('content');
   // dataTables
   $(function() {
     var table = $('#data_table').removeAttr('width').DataTable({
+      "language":{
+        "url": "https://cdn.datatables.net/plug-ins/1.13.2/i18n/pt-PT.json"
+      },
       "paging": true,
       "lengthChange": false,
       "searching": true,
@@ -135,7 +139,7 @@ $this->section('content');
       "scrollY": '45vh',
       "scrollX": true,
       "scrollCollapse": false,
-      "responsive": false,
+      "responsive": true,
       "ajax": {
         "url": '<?php echo base_url($controller . "/getAll") ?>',
         "type": "POST",
