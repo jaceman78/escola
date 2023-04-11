@@ -1,0 +1,71 @@
+INFO - 2023-03-30 15:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:22:33 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:22:50 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-30 15:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:24:13 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:24:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:24:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-30 15:24:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:24:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-30 15:24:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-30 15:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-30 15:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -105,7 +105,7 @@ lista.appendChild(novoItem);
 $(document).ready(function() {
     var id_turma = "<?php echo $idturma; ?>";
     $.ajax({
-        url: "/turmadisciplina/getTurmasDisciplinas/" + id_turma,
+        url: "/turmadisciplina/getTurmasDetalhes/" + id_turma,
         type: "POST",
         dataType: "json",
         success: function(data) {
@@ -116,6 +116,7 @@ $(document).ready(function() {
                 cards += '<div class="card-body">';
                 cards += '<h5 class="card-title">' + turmaDisciplina.turma_id + '</h5>';
                 cards += '<p class="card-text">' + turmaDisciplina.carga_horaria + '</p>';
+                cards += '<p class="card-text">' + turmaDisciplina.nomeprof + '</p>';
                 cards += '</div>';
                 cards += '</div>';
             });
@@ -127,30 +128,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-  // dataTables
-  // $(function() {
-  //   var table = $('#data_table').removeAttr('width').DataTable({
-  //     "paging": true,
-  //     "lengthChange": false,
-  //     "searching": true,
-  //     "ordering": true,
-  //     "info": true,
-  //     "autoWidth": false,
-  //     "scrollY": '45vh',
-  //     "scrollX": true,
-  //     "scrollCollapse": false,
-  //     "responsive": false,
-  //     "ajax": {
-  //       "url": '<?php // echo base_url($controller . "/getAll") ?>',
-  //       "type": "POST",
-  //       "dataType": "json",
-  //       async: "true"
-  //     }
-  //   });
-  // });
 
   var urlController = '';
   var submitText = '';

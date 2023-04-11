@@ -98,7 +98,7 @@ class Turmadisciplina extends BaseController
 	}
 
 
-	public function getTurmasDisciplinas($id_turma) //cards lista todos os detalhes da turma/disciplina
+	public function getTurmasDetalhes($id_turma) //cards lista todos os detalhes da turma/disciplina
 	{
 	$data = $this->turmadisciplinaModel->findAllporTurma($id_turma);	
 	//echo "<pre>"; print_r($data);

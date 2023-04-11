@@ -332,10 +332,7 @@
                 </ul>  
               </li>
 
-
-
               <!--Alunos-->
-
               <li class="nav-item has-treeview2 ">
                 <a href="#" class="nav-link "  >
                   <i class="fas fa-minus nav-icon"></i>
@@ -345,13 +342,13 @@
                 </a>  
                 <ul class="nav nav-treeview ">
                 <li class="nav-item">
-                    <a href="<?php echo site_url(); ?>/manage-aluno" class="nav-link">
+                <a href="<?= route_to('aluno.listagem');?>" class="nav-link <?=(current_url()==base_url('aluno.listagem')) ? 'active' : '';?> ">
                       <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
                       <p style="padding-left:1em" >Listagem de alunos</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="<?php echo site_url(); ?>/add-aluno" class="nav-link">
+                  <a href="<?= route_to('aluno.inserir');?>" class="nav-link <?=(current_url()==base_url('aluno.inserir')) ? 'active' : '';?> ">
                       <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
                       <p style="padding-left:1em">Inserir</p>
                     </a>

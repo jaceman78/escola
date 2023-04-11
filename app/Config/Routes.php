@@ -143,7 +143,7 @@ $routes->group("turmadisciplina", ['namespace' => 'App\Controllers'], function (
     $routes->get('indexporturma/(:num)', 'Turmadisciplina::indexporturma/$1');
     $routes->get('turmadetalhes/(:num)', 'Turmadisciplina::turmadetalhes/$1');
     $routes->post('getAllTurmadisciplina/(:num)', 'Turmadisciplina::getAllTurmadisciplina/$1');
-    $routes->get('getTurmasDisciplinas/(:num)', 'Turmadisciplina::getTurmasDisciplinas/$1');
+    $routes->post('getTurmasDetalhes/(:num)', 'Turmadisciplina::getTurmasDetalhes/$1');
     $routes->post('getAll', 'Turmadisciplina::getAll');
     $routes->post('getOne', 'Turmadisciplina::getOne');
     $routes->post('add', 'Turmadisciplina::add');
@@ -153,8 +153,18 @@ $routes->group("turmadisciplina", ['namespace' => 'App\Controllers'], function (
 //TurmasDetalhesreg
 
 
+//Alunos
 
-
+$routes->group("aluno", ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('listagem', 'Aluno::index',['as'=>'aluno.listagem']);
+    $routes->get('profilealuno/(:num)', 'Aluno::profilealuno/$1');
+   // $routes->post('getAllpordisciplina/(:num)', 'Modulo::getAllpordisciplina/$1');
+    $routes->post('getAll', 'Aluno::getAll');
+    $routes->post('getOne', 'Aluno::getOne');
+    $routes->post('add', 'Aluno::add');
+    $routes->post('edit', 'Aluno::edit');
+    $routes->post('remove', 'Aluno::remove');
+});
 
 /*
  * --------------------------------------------------------------------
