@@ -28,7 +28,7 @@ class Tipologia extends BaseController
                 'title'     		=> 'tipologia'				
 			];
 		
-		return view('tipologia', $data);
+		return view('dashboard/tipologia', $data);
 			
 	}
 

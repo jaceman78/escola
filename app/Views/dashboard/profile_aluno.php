@@ -90,11 +90,13 @@ $this->section('content');
                   <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
                   <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
                   <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#EE_tab" data-toggle="tab">Enc. Educação</a></li>
-                </ul>
+                  <li class="nav-item"><a class="nav-link" href="#EE_tab" data-toggle="tab" onclick="getEEdetalhes()">Enc. Educação</a></li>
+                </ul>                
               </div><!-- /.card-header -->
+
               <div class="card-body">
                 <div class="tab-content">
+
                   <div class="active tab-pane" id="activity">
                     <!-- Post -->
                     <div class="post">
@@ -209,6 +211,10 @@ $this->section('content');
                     <!-- /.post -->
                   </div>
                   <!-- /.tab-pane -->
+
+
+
+
                   <div class="tab-pane" id="timeline">
                     <!-- The timeline -->
                     <div class="timeline timeline-inverse">
@@ -305,6 +311,12 @@ $this->section('content');
                   </div>
                   <!-- /.tab-pane -->
 
+
+
+
+
+
+
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
@@ -353,8 +365,34 @@ $this->section('content');
                       </div>
                     </form>
                   </div>
+
+
+
+
+
+
+                  <div class="tab-pane" id="EE_tab" >
+                    <!-- Conteudos tab EE -->
+
+                    <?= (isset($ee_id))?$ee_id:'SEM idee';?>
+                    
+                  
+
+
+
+
+                  </div>
+
+
+
+
+
+
+
                   <!-- /.tab-pane -->
                 </div>
+
+
                 <!-- /.tab-content -->
               </div><!-- /.card-body -->
             </div>
@@ -369,6 +407,42 @@ $this->section('content');
   </div>
   <!-- /.content-wrapper -->
 
+
+
+<script>
+		// "id_ee": "77",
+		// "nome_ee": "LOUELL VIEGAS GOMES LIMA",
+		// "telemovel_ee": "961215200",
+		// "email_ee": "gomeslima86@gmail.com",
+		// "NIF_ee": "2147483647",
+		// "representante": null,
+		// "status": null
+  function getEEdetalhes() {
+  var ee_id = <?= (isset($ee_id))?$ee_id:'3';?>; // Substitua pelo ID necessário
+  $.ajax({
+    url: '/aluno/EEdetalhes/' + ee_id,
+    method: 'POST',
+    dataType: 'json',
+    success: function(data) {
+      // Crie as cards com os dados recebidos
+      var html = '';
+   
+        html += '<div class="card bg-light d-flex flex-fill">';
+        html += '<div class="card-body">';
+        html += '<h5 class="card-title">' + data.telemovel_ee + '</h5>';
+        html += '<p class="card-text"><strong>ID:</strong> ' + data.id_ee + '</p>';
+        html += '<p class="card-text"><strong>Email:</strong> ' + data.email_ee + '</p>';
+        html += '</div>';
+        html += '</div>';
+     
+
+      // Adicione as cards à div da tab
+      $('#EE_tab').empty().append(html);
+    }
+  });
+}
+
+</script>
 <?php
 $this->endSection();
 

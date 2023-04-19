@@ -6,16 +6,18 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 
 use App\Models\AlunoModel;
-
+use App\Models\EnceducacaoModel;
 class Aluno extends BaseController
 {
 	
     protected $alunoModel;
+	protected $enceducacaoModel;
     protected $validation;
 	
 	public function __construct()
 	{
 	    $this->alunoModel = new AlunoModel();
+		$this->enceducacaoModel = new EnceducacaoModel();
        	$this->validation =  \Config\Services::validation();
 		
 	}
@@ -72,6 +74,24 @@ class Aluno extends BaseController
 			
 	}
 
+	public function EEdetalhes($ee_id) {
+	
+
+		$Encarregado =  $this->enceducacaoModel->where('id_ee' ,$ee_id)->first();		
+		return $this->response->setJSON($Encarregado);
+
+		// "id_ee": "77",
+		// "nome_ee": "LOUELL VIEGAS GOMES LIMA",
+		// "telemovel_ee": "961215200",
+		// "email_ee": "gomeslima86@gmail.com",
+		// "NIF_ee": "2147483647",
+		// "representante": null,
+		// "status": null
+		
+	  }
+	  
+
+
 	public function getAll()
 	{
  		$response = $data['data'] = array();	
@@ -90,7 +110,6 @@ class Aluno extends BaseController
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_aluno .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';
-
 
 
 			$data['data'][$key] = array(

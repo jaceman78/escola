@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="<?= base_url('plugins/fontawesome-free/css/all.min.css') ?>">
+    
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="<?= base_url('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
     <!-- Theme style -->
@@ -28,7 +29,8 @@
     <!-- Dark style -->
     <!--ADEL<link rel="stylesheet" href="<?php /* echo base_url('css/dark/adminlte-dark-addon.min.css')*/ ?>">  --> 
     
-    <title><?= (isset($title))?$title:'Document';?></title>
+
+    <title><?= (isset($title))?$title:'ESJB';?></title>
  
 
     <!-- Google Font: Source Sans Pro -->
@@ -228,6 +230,7 @@
   </nav>
   <!-- /.navbar -->
 
+  <!-- INÍCIO DO MENU DE NAVEGAÇÃO -->
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -263,7 +266,7 @@
               </a>
             </li>
 
-
+              <!--------------------- MANUTENÇÃO----------------------------->
             <li class="nav-item has-treeview ">
              <a href="#" class="nav-link  ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -274,193 +277,205 @@
               </a>
               <ul class="nav nav-treeview">
 
-              <!--Turmas-->
-              <li class="nav-item has-treeview2">
-              <a href="#" class="nav-link "  >  
+                <!--Turmas-->
+                <li class="nav-item has-treeview2">
+                  <a href="#" class="nav-link "  >  
+                        <i class="fas fa-minus nav-icon"></i>
+                        <p>Turmas
+                        <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>                   
+                  
+                  <ul class="nav nav-treeview" name="itemturmaprofissinal">
+                      <li class="nav-item">
+                        <a href="<?= route_to('turmas.homeprofissional');?>" class="nav-link <?=(current_url()==base_url('turma/homeprofissional')) ? 'active' : '';?> ">
+                            <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                            <p style="padding-left:1em">Profissional</p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="<?= route_to('turmas.homeregular');?>" class="nav-link <?=(current_url()==base_url('turma/homeregular')) ? 'active' : '';?> ">
+                          <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em" >Regular</p>
+                        </a>
+                      </li>
+                  </ul>
+                </li>
+
+                <!--Disciplinas-->
+                <li class="nav-item has-treeview2">
+                  <a href="#" class="nav-link "  >
+                      <i class="fas fa-minus nav-icon"></i>
+                      <p>Diciplinas
+                      <i class="right fas fa-angle-left"></i>
+                      </p>
+                  </a>  
+
+                  <ul class="nav nav-treeview" name="itemprofissional">
+                    <li class="nav-item">
+                      <a href="<?= route_to('disciplinas.homeprofissional');?>" class="nav-link <?=(current_url()==base_url('disciplina/homeprofissional')) ? 'active' : '';?> ">
+                          <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em">Profissional</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="<?= route_to('disciplinas.homeregular');?>" class="nav-link <?=(current_url()==base_url('disciplina/homeregular')) ? 'active' : '';?> ">
+                        <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
+                        <p style="padding-left:1em" >Regular</p>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="<?= route_to('disciplinas.home');?>" class="nav-link <?=(current_url()==base_url('disciplina/home')) ? 'active' : '';?> ">
+                          <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em">Adicionar/alterar</p>
+                        </a>
+                    </li>
+                  </ul>  
+                </li>
+
+                <!--Alunos-->
+                <li class="nav-item has-treeview2 ">
+                  <a href="#" class="nav-link "  >
                     <i class="fas fa-minus nav-icon"></i>
-                    <p>Turmas
+                    <p >Alunos 
                     <i class="right fas fa-angle-left"></i>
+                  </p>
+                  </a>  
+                  <ul class="nav nav-treeview ">
+                    <li class="nav-item">
+                    <a href="<?= route_to('aluno.listagem');?>" class="nav-link <?=(current_url()==base_url('aluno.listagem')) ? 'active' : '';?> ">
+                          <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em" >Listagem de alunos</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="<?= route_to('aluno.inserir');?>" class="nav-link <?=(current_url()==base_url('aluno.inserir')) ? 'active' : '';?> ">
+                          <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em">Inserir</p>
+                        </a>
+                      </li>
+                  </ul>  
+                </li>
+
+                <!--Professores-->
+    
+                <li class="nav-item has-treeview2">
+                  <a href="#" class="nav-link "  >
+                      <i class="fas fa-minus nav-icon"></i>
+                      <p>Professores
+                      <i class="right fas fa-angle-left"></i>
                     </p>
-                </a>                   
-              
-              <ul class="nav nav-treeview" name="itemturmaprofissinal">
-                  <li class="nav-item">
-                    <a href="<?= route_to('turmas.homeprofissional');?>" class="nav-link <?=(current_url()==base_url('turma/homeprofissional')) ? 'active' : '';?> ">
-                        <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                    </a>  
+                  <ul class="nav nav-treeview ">
+                    <li class="nav-item">
+                      <a href="<?= route_to('user.home');?>" class="nav-link">
+                          <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em" >Listagem</p>
+                          </a>
+                    </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
+                          <p style="padding-left:1em">xxxx</p>
+                        </a>
+                    </li>
+                  </ul>  
+                </li>
+
+                <!--Templates email-->
+                <li class="nav-item">
+                  <a href="<?php echo site_url(); ?>/manage-emailtemplate" class="nav-link">
+                    <i class="fas fa-minus nav-icon"></i>
+                    <p>Templates de Email</p>                  
+                  </a>
+                </li>
+                <!--Anos letivos-->
+                <li class="nav-item">
+                  <a href="<?= route_to('anoletivo.home');?>" class="nav-link <?=(current_url()==base_url('anoletivo/home')) ? 'active' : '';?> ">
+                    <i class="fas fa-minus nav-icon"></i>
+                    <p>Anos letivos</p>                  
+                  </a>
+                </li>
+              </ul>
+            </li>
+         <!---------------------------- Minhas Turmas------------------------------------->
+         <li class="nav-item has-treeview2  ">
+              <a href="#" class="nav-link  ">
+              <i class="nav-icon fas fa-users-rectangle"></i>
+              <p>
+              Minhas Turmas
+                <i class="right fas fa-angle-left"></i>
+              </p>
+              </a>
+              <ul class="nav nav-treeview ">
+                <li class="nav-item has-treeview">
+
+                
+                
+                    <li class="nav-item">
+                      <a href="<?php echo site_url(); ?>/contatar-aluno" class="nav-link">
+                        <i style="padding-left:1em" class="far fa-dot-circle nav-icon"></i>
+                        <p style="padding-left:1em" >Regular</p>
+                      </a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i style="padding-left:1em" class="far fa-dot-circle nav-icon"></i>
                         <p style="padding-left:1em">Profissional</p>
                       </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="<?= route_to('turmas.homeregular');?>" class="nav-link <?=(current_url()==base_url('turma/homeregular')) ? 'active' : '';?> ">
-                      <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em" >Regular</p>
-                    </a>
-                  </li>
-            </ul>
+                    </li>
+                  
+
+
+                </li>
+              </ul>
             </li>
 
-              <!--Disciplinas-->
-              <li class="nav-item has-treeview2">
-                <a href="#" class="nav-link "  >
-                    <i class="fas fa-minus nav-icon"></i>
-                    <p>Diciplinas
-                    <i class="right fas fa-angle-left"></i>
-                    </p>
-                </a>  
-
-                <ul class="nav nav-treeview" name="itemprofissional">
-                  <li class="nav-item">
-                    <a href="<?= route_to('disciplinas.homeprofissional');?>" class="nav-link <?=(current_url()==base_url('disciplina/homeprofissional')) ? 'active' : '';?> ">
-                        <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
-                        <p style="padding-left:1em">Profissional</p>
-                      </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="<?= route_to('disciplinas.homeregular');?>" class="nav-link <?=(current_url()==base_url('disciplina/homeregular')) ? 'active' : '';?> ">
-                      <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em" >Regular</p>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="<?= route_to('disciplinas.home');?>" class="nav-link <?=(current_url()==base_url('disciplina/home')) ? 'active' : '';?> ">
-                        <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
-                        <p style="padding-left:1em">Adicionar/alterar</p>
-                      </a>
-                  </li>
-                </ul>  
-              </li>
-
-              <!--Alunos-->
-              <li class="nav-item has-treeview2 ">
-                <a href="#" class="nav-link "  >
-                  <i class="fas fa-minus nav-icon"></i>
-                  <p >Alunos 
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-                </a>  
-                <ul class="nav nav-treeview ">
-                <li class="nav-item">
-                <a href="<?= route_to('aluno.listagem');?>" class="nav-link <?=(current_url()==base_url('aluno.listagem')) ? 'active' : '';?> ">
-                      <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em" >Listagem de alunos</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="<?= route_to('aluno.inserir');?>" class="nav-link <?=(current_url()==base_url('aluno.inserir')) ? 'active' : '';?> ">
-                      <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em">Inserir</p>
-                    </a>
-                  </li>
-              </ul>  
-              </li>
-
-
-
-
-              <!--Professores-->
-
-   
-              <li class="nav-item has-treeview2">
-              <a href="#" class="nav-link "  >
-                  <i class="fas fa-minus nav-icon"></i>
-                  <p>Professores
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-                </a>  
-                <ul class="nav nav-treeview ">
-                <li class="nav-item">
-                  <a href="<?= route_to('user.home');?>" class="nav-link">
-                      <i style="padding-left:1em"class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em" >Listagem</p>
-                      </a>
-                 </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">
-                      <i style="padding-left:1em" class="fas fa-dot-circle nav-icon"></i>
-                      <p style="padding-left:1em">xxxx</p>
-                    </a>
-              </li>
-              </ul>  
-              </li>
-
-
-              <li class="nav-item">
-                <a href="<?php echo site_url(); ?>/manage-emailtemplate" class="nav-link">
-                  <i class="fas fa-minus nav-icon"></i>
-                  <p>Templates de Email</p>                  
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?= route_to('anoletivo.home');?>" class="nav-link <?=(current_url()==base_url('anoletivo/home')) ? 'active' : '';?> ">
-                  <i class="fas fa-minus nav-icon"></i>
-                  <p>Anos letivos</p>                  
-                </a>
-              </li>
-
-            </ul>
-        </li>
-
-          
-
-
-              <!---------------------------- NOVO BRAÇO------------------------------------->
-              <li class="nav-item has-treeview2  ">
-             <a href="#" class="nav-link  ">
+              <!---------------------------- COMUNICAÇÕES------------------------------------->
+            <li class="nav-item has-treeview2  ">
+              <a href="#" class="nav-link  ">
               <i class="nav-icon fas fad fa-address-book"></i>
               <p>
                 Comunicações
                 <i class="right fas fa-angle-left"></i>
               </p>
-            </a>
-            <ul class="nav nav-treeview ">
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Alunos
-                  <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-              
-                <ul class="nav nav-treeview ">
-                  <li class="nav-item">
-                    <a href="<?php echo site_url(); ?>/contatar-aluno" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Email</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>WhatsApp 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>SMS 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo site_url(); ?>/view-turma1" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Enc Educação</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo site_url(); ?>/view-turma1" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Professores</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-
+              </a>
+              <ul class="nav nav-treeview ">
+                <li class="nav-item has-treeview">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Alunos
+                    <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                
+                  <ul class="nav nav-treeview ">
+                    <li class="nav-item">
+                      <a href="<?php echo site_url(); ?>/contatar-aluno" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>Email</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>WhatsApp 3</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="far fa-dot-circle nav-icon"></i>
+                        <p>SMS 3</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+              <!---------------------------- ------------------------------------->
 
 
             </ul>
@@ -471,6 +486,12 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
+  <!-- FIM DO MENU DE NAVEGAÇÃO -->
+
+
+
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -548,7 +569,7 @@
 
   <script type="text/javascript">
 
-console.log("rere");
+ //console.log("linha 574");
   const url = window.location;
   /*remove all active and menu open classes(collapse)*/
   $('ul.nav-sidebar a').removeClass('active').parent().siblings().removeClass('menu-open');

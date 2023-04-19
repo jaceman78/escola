@@ -80,4 +80,21 @@ class TurmasModel extends Model {
 
         return $query->getResult();
     }
+
+
+	public function findDetalhesTurma($id_turma)
+	{
+		$db = \Config\Database::connect();
+	
+		$query = $db->table('turma')
+			->select('turma.*,tipologia.nome_tipologia,user.name as nomedt,user.profile_img,user.email,
+			 (SELECT COUNT(*) FROM turmadisciplina WHERE turma_id = ' . $id_turma . ') as num_disciplinas')
+			->join('tipologia','tipologia.id_tipologia=turma.tipologia_id' )
+			->join('user','user.id=turma.dt_id', 'left' )
+			->where('id_turma', $id_turma)
+			->get();
+	
+		return $query->getResult();
+	}
+	
 }

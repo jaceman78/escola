@@ -201,6 +201,28 @@ class Turmas extends BaseController
 
 
 
+	public function getTurmaDetalhes($id_turma) //cards lista todos os detalhes da turma/disciplina
+	{
+	$data = $this->turmasModel->findDetalhesTurma($id_turma);	//<-novo
+	//echo "<pre>"; print_r($data);
+	return $this->response->setJSON($data);
+	// [id_turma] => 48
+	// [ano] => 10
+	// [nome] => 10G
+	// [dt_id] => 385
+	// [anoletivo_id] => 1
+	// [tipologia_id] => 1
+	// [nome_tipologia] => Regular
+	// [nomedt] => Maria de Fátima Bexinina Matado
+	// [profile_img] => ../imagens/default.png
+	// [email] => mariamatado@aejoaodebarros.pt
+	// [num_disciplinas] => 7
+	}
+
+
+
+
+
 	public function getOne()
 	{
  		$response = array();

@@ -7,10 +7,139 @@ $this->section('content');
 <!-- Main content -->
 
 
+<div class="col-12 col-sm-12">
+      <div class="card card-primary card-outline card-outline-tabs">
+        <div class="card-header p-0 border-bottom-0">
+          <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="custom-tabs-four-disciplinas-tab" data-toggle="pill" href="#custom-tabs-four-disciplinas" role="tab" aria-controls="custom-tabs-four-disciplinas" aria-selected="false">Disciplinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="custom-tabs-four-professores-tab" data-toggle="pill" href="#custom-tabs-four-professores" role="tab" aria-controls="custom-tabs-four-professores" aria-selected="false">Professores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="custom-tabs-four-avaliacao-tab" data-toggle="pill" href="#custom-tabs-four-avaliacao" role="tab" aria-controls="custom-tabs-four-avaliacao" aria-selected="false">Avaliação</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="custom-tabs-four-tabContent">
+            <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+             
+          </div>
+            <div class="tab-pane fade" id="custom-tabs-four-disciplinas" role="tabpanel" aria-labelledby="custom-tabs-four-disciplinas-tab">
+            Disciplinas:    
+            
+            </div>
+            <div class="tab-pane fade" id="custom-tabs-four-professores" role="tabpanel" aria-labelledby="custom-tabs-four-professores-tab">
+            
+            
+            
+
+
+
+
+
+<!-- Default box -->
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 d-flex align-items-stretch flex-column">
+              <div class="card bg-light d-flex flex-fill">
+                <div class="card-header text-muted border-bottom-0">
+                  Digital Strategist
+                </div>
+                <div class="card-body pt-0">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="lead"><b>Nicole Pearson</b></h2>
+                      <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
+                      <ul class="ml-4 mb-0 fa-ul text-muted">
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Demo Street 123, Demo City 04312, NJ</li>
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: + 800 - 12 12 23 52</li>
+                      </ul>
+                    </div>
+                    <div class="col-5 text-center">
+                      <img src="../../dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <a href="#" class="btn btn-sm bg-teal">
+                      <i class="fas fa-comments"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> View Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 d-flex align-items-stretch flex-column">
+              <div class="card bg-light d-flex flex-fill">
+                <div class="card-header text-muted border-bottom-0">
+                  Digital Strategist
+                </div>
+                <div class="card-body pt-0">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="lead"><b>Nicole Pearson</b></h2>
+                      <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
+                      <ul class="ml-4 mb-0 fa-ul text-muted">
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Demo Street 123, Demo City 04312, NJ</li>
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: + 800 - 12 12 23 52</li>
+                      </ul>
+                    </div>
+                    <div class="col-5 text-center">
+                      <img src="../../dist/img/user2-160x160.jpg" alt="user-avatar" class="img-circle img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <a href="#" class="btn btn-sm bg-teal">
+                      <i class="fas fa-comments"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> View Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+      
+    
+ 
+        <!-- /.card-body -->
+
+
+
+
+
+
+            
+
+          </div>
+            <div class="tab-pane fade" id="custom-tabs-four-avaliacao" role="tabpanel" aria-labelledby="custom-tabs-four-avaliacao-tab">
+                Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+      </div>
+    </div>
+
+
+
+
+
+
 
 <div id="card-container"></div>
-
-
 
 
 
@@ -88,7 +217,7 @@ novoIcon.classList.add('fas', 'fa-dot-circle', 'nav-icon');
 novoIcon.style.paddingLeft = '1em';
 // cria um novo elemento p
 let novoTexto = document.createElement('p');
-novoTexto.innerText = 'Detalhes da turma';
+novoTexto.innerText = 'Detalhes da turma '+'<?=$nomedaturma?>';
 novoTexto.style.paddingLeft= '1em';
 
 // adiciona o elemento i ao elemento a
@@ -105,12 +234,14 @@ lista.appendChild(novoItem);
 $(document).ready(function() {
     var id_turma = "<?php echo $idturma; ?>";
     $.ajax({
-        url: "/turmadisciplina/getTurmasDetalhes/" + id_turma,
+        url: "/turmadisciplina/getDisciplinaDetalhes/" + id_turma,
         type: "POST",
         dataType: "json",
         success: function(data) {
             var cards = "";
             data.forEach(function(turmaDisciplina) {
+              if(turmaDisciplina.nomeprof==null)
+                turmaDisciplina.nomeprof="Adicionar professor";
                 cards += '<div class="card">';
                 cards += '<div class="card-header">' + turmaDisciplina.disciplina_id + '</div>';
                 cards += '<div class="card-body">';
@@ -120,12 +251,37 @@ $(document).ready(function() {
                 cards += '</div>';
                 cards += '</div>';
             });
-            $('#card-container').html(cards);
+            $('#custom-tabs-four-disciplinas').html(cards);
         }
     });
 });
 
 
+
+$(document).ready(function() {
+    var id_turma = "<?php echo $idturma; ?>";
+    $.ajax({
+        url: "/turmas/getTurmaDetalhes/" + id_turma,
+        type: "POST",
+        dataType: "json",
+        success: function(data) {
+            var cards = "";
+           
+                cards += '<div class="card">';
+                cards += '<div class="card-header">' + data[0].nome + '</div>';
+                cards += '<div class="card-body">';
+                cards += '<h5 class="card-title">' + data[0].nome_tipologia + '</h5>';
+                cards += '<p class="card-text">' + data[0].nomedt + '</p>';
+                cards += '<p class="card-text">' + data[0].email + '</p>';
+                cards += '<p class="card-text">' + data[0].profile_img + '</p>';
+                cards += '<p class="card-text">' + data[0].num_disciplinas + '</p>';
+                cards += '</div>';
+                cards += '</div>';
+            
+            $('#custom-tabs-four-home').html(cards);
+        }
+    });
+});
 
 
 
@@ -218,7 +374,7 @@ $(document).ready(function() {
                 toast: true,
                 position: 'top-end',
                 icon: 'success',
-                title: response.messages,
+                title: response.professores,
                 showConfirmButton: false,
                 timer: 1500
               }).then(function() {
@@ -226,21 +382,21 @@ $(document).ready(function() {
                 $('#data-modal').modal('hide');
               })
             } else {
-              if (response.messages instanceof Object) {
-                $.each(response.messages, function(index, value) {
+              if (response.professores instanceof Object) {
+                $.each(response.professores, function(index, value) {
                   var ele = $("#" + index);
                   ele.closest('.form-control')
                     .removeClass('is-invalid')
                     .removeClass('is-valid')
                     .addClass(value.length > 0 ? 'is-invalid' : 'is-valid');
-                  ele.after('<div class="invalid-feedback">' + response.messages[index] + '</div>');
+                  ele.after('<div class="invalid-feedback">' + response.professores[index] + '</div>');
                 });
               } else {
                 Swal.fire({
                   toast: false,
                   position: 'bottom-end',
                   icon: 'error',
-                  title: response.messages,
+                  title: response.professores,
                   showConfirmButton: false,
                   timer: 3000
                 })
@@ -290,7 +446,7 @@ $(document).ready(function() {
                 toast:true,
                 position: 'top-end',
                 icon: 'success',
-                title: response.messages,
+                title: response.professores,
                 showConfirmButton: false,
                 timer: 1500
               }).then(function() {
@@ -301,7 +457,7 @@ $(document).ready(function() {
                 toast:false,
                 position: 'bottom-end',
                 icon: 'error',
-                title: response.messages,
+                title: response.professores,
                 showConfirmButton: false,
                 timer: 3000
               })

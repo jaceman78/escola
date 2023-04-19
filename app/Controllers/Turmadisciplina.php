@@ -59,8 +59,8 @@ class Turmadisciplina extends BaseController
 		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();
 	    $data = [
 			'controller'    	=> 'turmadisciplina',
-			'title'     		=> 'Detalhes da turma'	,
-			'pageTitle'			=> 'Detalhes da turma '	,		
+			'title'     		=> 'Detalhes da turma '.$resultturma->nome	,
+			'pageTitle'			=> 'Detalhes da turma '	.$resultturma->nome,		
 			'idturma'			=> $id_turma,
 			'ano'				=> $resultturma->ano,
 			'nomedaturma'       => $resultturma->nome,
@@ -98,7 +98,7 @@ class Turmadisciplina extends BaseController
 	}
 
 
-	public function getTurmasDetalhes($id_turma) //cards lista todos os detalhes da turma/disciplina
+	public function getDisciplinaDetalhes($id_turma) //cards lista todos os detalhes das disciplinas
 	{
 	$data = $this->turmadisciplinaModel->findAllporTurma($id_turma);	
 	//echo "<pre>"; print_r($data);

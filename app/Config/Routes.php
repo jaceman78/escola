@@ -125,7 +125,7 @@ $routes->group("turmas", ['namespace' => 'App\Controllers'], function ($routes) 
     $routes->get('home', 'Turmas::index',['as'=>'turmas.home']);
     $routes->get('homeregular', 'Turmas::indexregular',['as'=>'turmas.homeregular']);
     $routes->get('homeprofissional', 'Turmas::indexprofissional',['as'=>'turmas.homeprofissional']);
-
+    $routes->post('getTurmaDetalhes/(:num)', 'Turmas::getTurmaDetalhes/$1');
     $routes->post('getAll', 'Turmas::getAll');
     $routes->post('getAllporAnoletivo/(:num)/(:num)', 'Turmas::getAllporAnoletivo/$1/$2');
     $routes->post('getOne', 'Turmas::getOne');
@@ -143,7 +143,7 @@ $routes->group("turmadisciplina", ['namespace' => 'App\Controllers'], function (
     $routes->get('indexporturma/(:num)', 'Turmadisciplina::indexporturma/$1');
     $routes->get('turmadetalhes/(:num)', 'Turmadisciplina::turmadetalhes/$1');
     $routes->post('getAllTurmadisciplina/(:num)', 'Turmadisciplina::getAllTurmadisciplina/$1');
-    $routes->post('getTurmasDetalhes/(:num)', 'Turmadisciplina::getTurmasDetalhes/$1');
+    $routes->post('getDisciplinaDetalhes/(:num)', 'Turmadisciplina::getDisciplinaDetalhes/$1');
     $routes->post('getAll', 'Turmadisciplina::getAll');
     $routes->post('getOne', 'Turmadisciplina::getOne');
     $routes->post('add', 'Turmadisciplina::add');
@@ -159,6 +159,7 @@ $routes->group("aluno", ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('listagem', 'Aluno::index',['as'=>'aluno.listagem']);
     $routes->get('profilealuno/(:num)', 'Aluno::profilealuno/$1');
    // $routes->post('getAllpordisciplina/(:num)', 'Modulo::getAllpordisciplina/$1');
+    $routes->post('EEdetalhes/(:num)', 'Aluno::EEdetalhes/$1');
     $routes->post('getAll', 'Aluno::getAll');
     $routes->post('getOne', 'Aluno::getOne');
     $routes->post('add', 'Aluno::add');
