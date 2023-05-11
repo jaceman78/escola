@@ -207,7 +207,7 @@ class Turmas extends BaseController
 	//echo "<pre>"; print_r($data);
 	return $this->response->setJSON($data);
 	// [id_turma] => 48
-	// [ano] => 10
+	// [ano] => 10 
 	// [nome] => 10G
 	// [dt_id] => 385
 	// [anoletivo_id] => 1
