@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?= base_url('plugins/fontawesome-free/css/all.min.css') ?>">
     
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="<?= base_url('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
+    <!-- apaguei o overlayScrollbars -->
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('css/adminlte.min.css') ?>">
      <!--<link rel="stylesheet" href="<?php /* echo base_url('css/rtl/adminlte.rtl.min.css') */ ?>"> --> 
@@ -29,14 +29,9 @@
     <!-- Dark style -->
     <!--ADEL<link rel="stylesheet" href="<?php /* echo base_url('css/dark/adminlte-dark-addon.min.css')*/ ?>">  --> 
     
+  
 
-    <title><?= (isset($title))?$title:'ESJB';?></title>
- 
 
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- jQuery -->
@@ -47,8 +42,13 @@
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
 
+    
+<title><?= (isset($title))?$title:'ESJB';?></title>
 </head>
 <body class="hold-transition sidebar-mini">
+
+
+
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -62,7 +62,7 @@
         <a href="" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">XXXXXXXS</a>
+        <a href="" class="nav-link">Outro</a>
       </li>
     </ul>
 
@@ -217,7 +217,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+        <a class="nav-link" data-widget="fullscreen" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
@@ -554,11 +554,11 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS 483 -->
+<!-- REQUIRED SCRIPTS -->
 
 
-    <!-- Global Script ADEL 486-->
-    <?= $this->include('layout/globalscript') ?>
+    <!-- Global Script ADEL globalscript.php- -->
+    <?= $this->include('dashboard/layout/globalscript') ?>
     <!--/Global Script -->
 
     <!-- PageScript ADEL-->
@@ -569,7 +569,7 @@
 
   <script type="text/javascript">
 
- //console.log("linha 574");
+
   const url = window.location;
   /*remove all active and menu open classes(collapse)*/
   $('ul.nav-sidebar a').removeClass('active').parent().siblings().removeClass('menu-open');

@@ -55,8 +55,8 @@ class Aluno extends BaseController
                 'controller'    	=> 'aluno',
                 'title'     		=> 'aluno',		
 				'pageTitle'			=> 'Perfil do aluno',
-				'n_aluno'			=> $result->n_aluno,
-				'num_interno'		=> $result->num_interno,
+				'num_E360'			=> $result->num_E360,
+				'num_interno'		=> $result->id_aluno,
 				'nome_aluno'		=> $result->nome_aluno,
 				'genero'			=> $result->genero,
 				'telemovel'			=> $result->telemovel,
@@ -72,6 +72,14 @@ class Aluno extends BaseController
 			//echo "<pre>"; print_r($data);
 		return view('dashboard/profile_aluno', $data);
 			
+	}
+
+
+	public function profilealunoModal($id_aluno)
+	{
+		$aluno = $this->alunoModel->where('id_aluno' ,$id_aluno)->first();
+		//echo "<pre>"; print_r($Aluno);
+		return $this->response->setJSON($aluno);			
 	}
 
 	public function EEdetalhes($ee_id) {
@@ -113,8 +121,8 @@ class Aluno extends BaseController
 
 
 			$data['data'][$key] = array(
-				$value->n_aluno,
-				$value->num_interno,
+				$value->id_aluno,
+				$value->num_E360,				
 				$value->nome_aluno,
 				$value->genero,
 				$value->telemovel,
@@ -155,8 +163,7 @@ class Aluno extends BaseController
         $response = array();
 
 		$fields['id_aluno'] = $this->request->getPost('id_aluno');
-		$fields['n_aluno'] = $this->request->getPost('n_aluno');
-		$fields['num_interno'] = $this->request->getPost('num_interno');
+		$fields['num_E360'] = $this->request->getPost('num_E360');
 		$fields['nome_aluno'] = $this->request->getPost('nome_aluno');
 		$fields['genero'] = $this->request->getPost('genero');
 		$fields['telemovel'] = $this->request->getPost('telemovel');
@@ -171,8 +178,8 @@ class Aluno extends BaseController
 
 
         $this->validation->setRules([
-			            'n_aluno' => ['label' => 'N aluno', 'rules' => 'permit_empty|min_length[0]'],
-            'num_interno' => ['label' => 'Num interno', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
+			'id_aluno' => ['label' => 'Id aluno', 'rules' => 'numeric|min_length[0]|max_length[11]|is_unique[aluno.id_aluno]'],//|is_unique[aluno.id_aluno]
+			'num_E360' => ['label' => 'Num E360', 'rules' => 'permit_empty|min_length[0]'],
             'nome_aluno' => ['label' => 'Nome aluno', 'rules' => 'permit_empty|min_length[0]'],
             'genero' => ['label' => 'Genero', 'rules' => 'permit_empty|min_length[0]|max_length[50]'],
             'telemovel' => ['label' => 'Telemovel', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
@@ -192,17 +199,18 @@ class Aluno extends BaseController
             $response['success'] = false;
 			$response['messages'] = $this->validation->getErrors();//Show Error in Input Form
 			
+		
+			
         } else {
 
-            if ($this->alunoModel->insert($fields)) {
-												
+            if ($this->alunoModel->add($fields)) {												
                 $response['success'] = true;
-                $response['messages'] = lang("App.insert-success") ;	
-				
-            } else {
+                $response['messages'] = lang("App.insert-success") ;
+				    } else {
 				
                 $response['success'] = false;
                 $response['messages'] = lang("App.insert-error") ;
+				
 				
             }
         }
@@ -215,8 +223,8 @@ class Aluno extends BaseController
         $response = array();
 		
 		$fields['id_aluno'] = $this->request->getPost('id_aluno');
-		$fields['n_aluno'] = $this->request->getPost('n_aluno');
-		$fields['num_interno'] = $this->request->getPost('num_interno');
+		$fields['num_E360'] = $this->request->getPost('num_E360');
+		
 		$fields['nome_aluno'] = $this->request->getPost('nome_aluno');
 		$fields['genero'] = $this->request->getPost('genero');
 		$fields['telemovel'] = $this->request->getPost('telemovel');
@@ -231,8 +239,8 @@ class Aluno extends BaseController
 
 
         $this->validation->setRules([
-			            'n_aluno' => ['label' => 'N aluno', 'rules' => 'permit_empty|min_length[0]'],
-            'num_interno' => ['label' => 'Num interno', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
+			            'num_E360' => ['label' => 'N aluno', 'rules' => 'permit_empty|min_length[0]'],
+            
             'nome_aluno' => ['label' => 'Nome aluno', 'rules' => 'permit_empty|min_length[0]'],
             'genero' => ['label' => 'Genero', 'rules' => 'permit_empty|min_length[0]|max_length[50]'],
             'telemovel' => ['label' => 'Telemovel', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],

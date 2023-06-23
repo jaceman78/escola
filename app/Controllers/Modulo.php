@@ -6,7 +6,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 
 use App\Models\ModuloModel;
-
+use App\Models\DisciplinasModel;
 class Modulo extends BaseController
 {
 	
@@ -16,6 +16,7 @@ class Modulo extends BaseController
 	public function __construct()
 	{
 	    $this->moduloModel = new ModuloModel();
+		$this->disciplinaModel=new DisciplinasModel();
        	$this->validation =  \Config\Services::validation();
 		
 	}
@@ -36,13 +37,13 @@ class Modulo extends BaseController
 	public function indexpordisciplina($id_disciplina)
 	{
 		$result = $this->moduloModel->getNomeDisciplina($id_disciplina);
-
+		$result2 = $this->disciplinaModel->getNomeDisciplina($id_disciplina);
 	    $data = [
                 'controller'    	=> 'modulo',
                 'title'     		=> 'Módulos',
 				'pageTitle'			=> 'Módulos dos Cursos '	,		
 				'iddisciplina'		=> $id_disciplina,
-				'nomedadisciplina'  => $result[0]->nome,
+				'nomedadisciplina'  => $result2[0]->nome,
 			];
 		
 		return view('dashboard/modulospordisciplina', $data);
@@ -71,6 +72,7 @@ class Modulo extends BaseController
 				$value->nome_modulo,
 				//$value->disciplina_id,
 				$value->nome, //da disciplina
+				$value->ano, //da disciplina
 				$value->horas_modulo,
 
 				$ops				
@@ -102,6 +104,7 @@ class Modulo extends BaseController
 			$data['data'][$key] = array(
 				$value->nome_modulo,
 				//$value->disciplina_id,
+				$value->ano, //da disciplina
 				$value->horas_modulo,
 
 				$ops				
@@ -135,6 +138,7 @@ class Modulo extends BaseController
 
 		$fields['id_modulo'] = $this->request->getPost('id_modulo');
 		$fields['nome_modulo'] = $this->request->getPost('nome_modulo');
+		$fields['ano'] = $this->request->getPost('ano');
 		$fields['disciplina_id'] = $this->request->getPost('disciplina_id');
 		$fields['horas_modulo'] = $this->request->getPost('horas_modulo');
 
@@ -143,7 +147,7 @@ class Modulo extends BaseController
 			'nome_modulo' => ['label' => 'Nome', 'rules' => 'required|min_length[0]|max_length[255]'],
             'disciplina_id' => ['label' => 'Disciplina id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
             'horas_modulo' => ['label' => 'Horas modulo', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
-
+			'ano' => ['label' => 'Ano', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
         ]);
 
         if ($this->validation->run($fields) == FALSE) {
@@ -177,13 +181,14 @@ class Modulo extends BaseController
 		$fields['nome_modulo'] = $this->request->getPost('nome_modulo');
 		$fields['disciplina_id'] = $this->request->getPost('disciplina_id');
 		$fields['horas_modulo'] = $this->request->getPost('horas_modulo');
+		$fields['ano'] = $this->request->getPost('ano');
 
 
         $this->validation->setRules([
 			            'nome_modulo' => ['label' => 'Nome', 'rules' => 'required|min_length[0]|max_length[255]'],
             'disciplina_id' => ['label' => 'Disciplina id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
             'horas_modulo' => ['label' => 'Horas modulo', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
-
+			'ano' => ['label' => 'Ano', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
         ]);
 
         if ($this->validation->run($fields) == FALSE) {

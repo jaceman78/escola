@@ -10,7 +10,7 @@ class ModuloModel extends Model {
 	protected $primaryKey = 'id_modulo';
 	protected $returnType = 'object';
 	protected $useSoftDeletes = false;
-	protected $allowedFields = ['nome_modulo', 'disciplina_id', 'horas_modulo'];
+	protected $allowedFields = ['nome_modulo', 'disciplina_id', 'ano', 'horas_modulo'];
 	protected $useTimestamps = false;
 	protected $createdField  = 'created_at';
 	protected $updatedField  = 'updated_at';

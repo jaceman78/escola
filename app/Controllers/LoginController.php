@@ -9,6 +9,12 @@ class LoginController extends BaseController
 	private $userModel=NULL;
 	private $googleClient=NULL;
 	function __construct(){
+		helper('session');	//Load Session Helper Adicionado
+		// Verifica se a sessão expirou
+        if (session()->get("LoggedUserData")) {
+            session()->setFlashData("Error", "Your session has expired. Please login again.");
+            return redirect()->to(base_url().'/login');
+        }
 		require_once APPPATH. "libraries/vendor/autoload.php";
 		$this->userModel = new UserModel();
 		$this->googleClient = new \Google_Client();
@@ -26,6 +32,7 @@ class LoginController extends BaseController
 			session()->setFlashData("Error", "You have Already Logged In");
 			return redirect()->to(base_url()."/user/profile");
 		}
+
 		$data['googleButton'] = '<a href="'.$this->googleClient->createAuthUrl().'" > 
 		<div id="g_id_onload" data-ux_mode="redirect"></div>	 	
 		<div class="g_id_signin"

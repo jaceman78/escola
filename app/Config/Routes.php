@@ -37,6 +37,7 @@ $routes->set404Override();
 
 $routes->get('/', 'LoginController::index', ['as' => 'login.login']);
 
+
 $routes->group('login', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('login', 'LoginController::index', ['as' => 'login.login']);
     $routes->get('profile', 'LoginController::profile', ['as' => 'login.profile']);
@@ -56,6 +57,7 @@ $routes->group("user",function($routes){
 $routes->group("user", ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('home', 'User::index',['as'=>'user.home']);
     $routes->post('getAll', 'User::getAll');
+    $routes->post('getAllArrayNomes', 'User::getAllArrayNomes');
     $routes->post('getOne', 'User::getOne');
     $routes->post('add', 'User::add');
     $routes->post('edit', 'User::edit');
@@ -93,7 +95,7 @@ $routes->group("disciplinas", ['namespace' => 'App\Controllers'], function ($rou
     //////////////////////////////////////////
     $routes->post('getAllregular', 'Disciplinas::getAllregular');
     $routes->post('getAllprofissional', 'Disciplinas::getAllprofissional');
-    $routes->post('getAllDisciplinas/(:num)/(:num)', 'Disciplinas::getAllDisciplinas/$1/$2');
+    $routes->post('getAllDisciplinas/(:num)/(:num)/(:num)', 'Disciplinas::getAllDisciplinas/$1/$2/$3');
 
 });
 //Tipologia
@@ -150,7 +152,21 @@ $routes->group("turmadisciplina", ['namespace' => 'App\Controllers'], function (
     $routes->post('edit', 'Turmadisciplina::edit');
     $routes->post('remove', 'Turmadisciplina::remove');
 });
-//TurmasDetalhesreg
+//Turmaluno
+$routes->group("turmaluno", ['namespace' => 'App\Controllers'], function ($routes) {
+    //$routes->get('home', 'Turmaluno::index',['as'=>'turmaluno.home']);
+   // $routes->get('indexporturma/(:num)', 'Turmaluno::indexporturma/$1');
+  //  $routes->get('turmadetalhes/(:num)', 'Turmaluno::turmadetalhes/$1');
+   // $routes->post('getAllTurmaluno(:num)', 'Turmaluno::getAllTurmaluno/$1');
+    $routes->post('getTurmaDetalhes/(:num)', 'Turmaluno::getTurmaDetalhes/$1');
+    $routes->post('getAll', 'Turmaluno::getAll');
+    $routes->post('getOne', 'Turmaluno::getOne');
+    $routes->post('add', 'Turmaluno::add');
+    $routes->post('edit', 'Turmaluno::edit');
+    $routes->post('remove', 'Turmaluno::remove');
+});
+
+
 
 
 //Alunos
@@ -158,6 +174,7 @@ $routes->group("turmadisciplina", ['namespace' => 'App\Controllers'], function (
 $routes->group("aluno", ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('listagem', 'Aluno::index',['as'=>'aluno.listagem']);
     $routes->get('profilealuno/(:num)', 'Aluno::profilealuno/$1');
+    $routes->post('profilealunoModal/(:num)', 'Aluno::profilealunoModal/$1');
    // $routes->post('getAllpordisciplina/(:num)', 'Modulo::getAllpordisciplina/$1');
     $routes->post('EEdetalhes/(:num)', 'Aluno::EEdetalhes/$1');
     $routes->post('getAll', 'Aluno::getAll');
@@ -166,6 +183,19 @@ $routes->group("aluno", ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('edit', 'Aluno::edit');
     $routes->post('remove', 'Aluno::remove');
 });
+
+//medidas_alunos
+$routes->post('medidas_alunos/atualizar', 'MedidasAlunos::atualizar');
+$routes->get('medidas_alunos/index/(:num)', 'MedidasAlunos::index/$1');
+$routes->post('medidas_alunos/delete', 'MedidasAlunos::delete');
+
+//Alunodisciplina
+$routes->post('alunodisciplina/atualizar', 'Alunodisciplina::atualizar');
+$routes->get('alunodisciplina/index/(:num)', 'Alunodisciplina::index/$1');
+$routes->post('alunodisciplina/delete', 'Alunodisciplina::delete');
+
+
+
 
 /*
  * --------------------------------------------------------------------

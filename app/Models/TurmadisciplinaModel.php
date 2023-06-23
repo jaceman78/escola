@@ -38,10 +38,11 @@ class TurmadisciplinaModel extends Model {
     $db = \Config\Database::connect();
 
     $query = $db->table('turmadisciplina')
-        ->select('turmadisciplina.*, turma.nome AS nometurma, user.name AS nomeprof')
+        ->select('turmadisciplina.*, turma.nome AS nometurma, user.name AS nomeprof, disciplina.nome AS nomedisc,disciplina.id_disciplina AS id_disciplina')
         ->join('turma', 'turmadisciplina.turma_id = turma.id_turma')
-        ->join('user', 'turmadisciplina.user_id = user.id', 'left') //left tambem faz aparecer os NULLs
-        ->where('turma_id', $id_turma)
+        ->join('user', 'turmadisciplina.user_id = user.id_360', 'left') //left tambem faz aparecer os NULLs
+		->join('disciplina', 'turmadisciplina.disciplina_id = disciplina.id_disciplina')
+        ->where('turma_id', $id_turma) 
         ->get(); 
 
     return $query->getResult();

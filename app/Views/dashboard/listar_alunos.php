@@ -54,19 +54,16 @@ $this->section('content');
       <div class="modal-body">
         <form id="data-form" class="pl-3 pr-3">
           <div class="row">
-<input type="hidden" id="id_aluno" name="id_aluno" class="form-control" placeholder="Id aluno" maxlength="11" required>
-						</div>
-						<div class="row">
+          <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="id_aluno" class="col-form-label"> N Interno: </label>
+            <input type="number" id="id_aluno" name="id_aluno" class="form-control" placeholder="Número Interno" minlength="0" maxlength="11" required>
+          </div>    
+          </div>
 							<div class="col-md-12">
 								<div class="form-group mb-3">
-									<label for="n_aluno" class="col-form-label"> N aluno: </label>
-									<textarea cols="40" rows="5" id="n_aluno" name="n_aluno" class="form-control" placeholder="N aluno" minlength="0"  ></textarea>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group mb-3">
-									<label for="num_interno" class="col-form-label"> Num interno: </label>
-									<input type="number" id="num_interno" name="num_interno" class="form-control" placeholder="Num interno" minlength="0"  maxlength="11" >
+									<label for="num_E360" class="col-form-label"> Num E360: </label>
+									<input type="number" id="num_E360" name="num_E360" class="form-control" placeholder="Num E360" minlength="0"  maxlength="11" >
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -99,7 +96,7 @@ $this->section('content');
 									<textarea cols="40" rows="5" id="foto_aluno" name="foto_aluno" class="form-control" placeholder="Foto aluno" minlength="0"  ></textarea>
 								</div>
 							</div>
-<div class="col-md-12">
+            <div class="col-md-12">
 								<div class="form-group mb-3">
 									<label for="data_nasci" class="col-form-label"> Data nasci: </label>
 									<input type="date" id="data_nasci" name="data_nasci" class="form-control" dateISO="true" >
@@ -221,24 +218,23 @@ $this->section('content');
           $("#form-btn").text(submitText);
           $('#data-modal').modal('show');
           //insert data to form
-          			$("#data-form #id_aluno").val(response.id_aluno);
-			$("#data-form #n_aluno").val(response.n_aluno);
-			$("#data-form #num_interno").val(response.num_interno);
-			$("#data-form #nome_aluno").val(response.nome_aluno);
-			$("#data-form #genero").val(response.genero);
-			$("#data-form #telemovel").val(response.telemovel);
-			$("#data-form #email").val(response.email);
-			$("#data-form #foto_aluno").val(response.foto_aluno);
-			$("#data-form #data_nasci").val(response.data_nasci);
-			$("#data-form #NIF").val(response.NIF);
-			$("#data-form #ee_id").val(response.ee_id);
-			$("#data-form #NEE").val(response.NEE);
-			$("#data-form #delegado").val(response.delegado);
-			$("#data-form #status").val(response.status);
+          $("#data-form #id_aluno").val(response.id_aluno);
+          $("#data-form #num_E360").val(response.num_E360);
+          $("#data-form #nome_aluno").val(response.nome_aluno);
+          $("#data-form #genero").val(response.genero);
+          $("#data-form #telemovel").val(response.telemovel);
+          $("#data-form #email").val(response.email);
+          $("#data-form #foto_aluno").val(response.foto_aluno);
+          $("#data-form #data_nasci").val(response.data_nasci);
+          $("#data-form #NIF").val(response.NIF);
+          $("#data-form #ee_id").val(response.ee_id);
+          $("#data-form #NEE").val(response.NEE);
+          $("#data-form #delegado").val(response.delegado);
+          $("#data-form #status").val(response.status);
 
+            }
+          });
         }
-      });
-    }
     $.validator.setDefaults({
       highlight: function(element) {
         $(element).addClass('is-invalid').removeClass('is-valid');

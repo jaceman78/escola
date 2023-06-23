@@ -34,7 +34,7 @@ $this->section('content');
                     <button type="submit" class="btn btn-success mr-2" id="form-btn"><?= lang("App.save") ?></button>
                   </form>
 
-
+ 
                 </div>
                 <!-- /.form-group -->
               </div>
@@ -51,13 +51,7 @@ $this->section('content');
 
 <!-- /Main content -->
 
-<script>
-            // var demo1 = $('select[name="duallistbox[]"]').bootstrapDualListbox();
-            // $("#formlist").submit(function() {
-            //   alert($('[name="duallistbox[]"]').val());
-            //   return false;
-            // });
-          </script>
+
 
 <?= $this->endSection() ?>
 <!-- /.content -->
@@ -100,7 +94,7 @@ lista.appendChild(novoItem);
 $(document).ready(function() {
   var list = $('#duallistbox');
   $.ajax({
-    "url": '<?php echo base_url("/disciplinas/getAllDisciplinas/".$tipo.'/'.$idturma) ?>',
+    "url": '<?php echo base_url("/disciplinas/getAllDisciplinas/".$tipo.'/'.$idturma.'/'.$ano) ?>',
     "type": "POST",
     "dataType": "json",
     "async": true,

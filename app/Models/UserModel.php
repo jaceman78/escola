@@ -8,7 +8,7 @@ class UserModel extends Model
 	protected $primaryKey ='id';
 	protected $returnType = 'object';
 	protected $DBGroup='default';
-	protected $allowedFields = ['oauth_id', 'name', 'email', 'profile_img', 'level','status','updated_at', 'created_at'];
+	protected $allowedFields = ['oauth_id', 'name', 'email', 'NIF','id_360','profile_img', 'level','status','updated_at', 'created_at'];
 
 	protected $createdField  = 'created_at';
 	protected $updatedField  = 'updated_at';
@@ -37,4 +37,9 @@ class UserModel extends Model
 	function insertUserData($userdata){
 		$this->db->table("user")->insert($userdata);
 	}
+
+	function getAllNome(){
+		return $this->db->table('user')->select('id,name,id_360')->orderBy('name', 'ASC')->get()->getResultArray();
+	}
+	
 }

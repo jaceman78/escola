@@ -11,7 +11,8 @@
         "ext-mbstring": "*",
         "laminas/laminas-escaper": "^2.9",
         "psr/log": "^1.1",
-        "google/apiclient": "2.12"
+        "google/apiclient": "2.12",
+        "mpdf/mpdf": "^6.1"
     },
     "require-dev": {
         "kint-php/kint": "^5.0.1",

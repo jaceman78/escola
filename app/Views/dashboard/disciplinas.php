@@ -22,6 +22,7 @@ $this->section('content');
             <thead>
               <tr>
               <th>Nome da disciplina</th>
+              <th>Id disciplina e360</th>
               <th>Carga horária</th>
               <th>Tipologia</th>
 
@@ -55,6 +56,13 @@ $this->section('content');
 									<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome da disciplina" minlength="0"  maxlength="255" required>
 								</div>
 							</div>
+                
+                <div class="col-md-12">
+                  <div class="form-group mb-3">
+                    <label for="id_disciplina_e360" class="col-form-label"> Id disciplina e360: <span class="text-danger">*</span> </label>
+                    <input type="text" id="id_disciplina_e360" name="id_disciplina_e360" class="form-control" placeholder="Id disciplina e360" minlength="0"  maxlength="11" required>
+                  </div>
+                </div>
 
 							<div class="col-md-12">
 								<div class="form-group mb-3">
@@ -131,7 +139,7 @@ $(document).ready(function() {
         "url": "https://cdn.datatables.net/plug-ins/1.13.2/i18n/pt-PT.json"
       },
       "paging": true,
-      "lengthChange": false,
+      "lengthChange": true,
       "searching": true,
       "ordering": true,
       "info": true,
@@ -191,6 +199,7 @@ $(document).ready(function() {
           //insert data to form
           $("#data-form #id_disciplina").val(response.id_disciplina);
           $("#data-form #nome").val(response.nome);
+          $("#data-form #id_disciplina_e360").val(response.id_disciplina_e360);
           $("#data-form #horas").val(response.horas);
           $("#data-form #tipologia_id").val(response.tipologia_id);
 

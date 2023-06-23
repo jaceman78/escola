@@ -75,6 +75,7 @@ class Disciplinas extends BaseController
 
 			$data['data'][$key] = array(
 			$value->nome,
+			$value->id_disciplina_e360,
 			$value->horas,
 			//$value->tipologia_id,
 			$value->nome_tipologia,
@@ -100,6 +101,7 @@ class Disciplinas extends BaseController
 			
 			$data['data'][$key] = array(
 			$value->nome,
+			$value->id_disciplina_e360,
 			$value->horas,
 			//$value->tipologia_id,
 			$value->nome_tipologia,
@@ -125,6 +127,7 @@ class Disciplinas extends BaseController
 			
 			$data['data'][$key] = array(
 			$value->nome,
+			$value->id_disciplina_e360,
 			$value->horas,
 			//$value->tipologia_id,
 			$value->nome_tipologia,
@@ -133,12 +136,22 @@ class Disciplinas extends BaseController
 		} 
 
 		return $this->response->setJSON($data);		
-	}
+	} 
 	
-	public function getAllDisciplinas($tipo,$turma_id)
+	public function getAllDisciplinas($tipo,$turma_id,$ano)
 	{
+		
  		$response = $data['data'] = array();
-		$result = $this->disciplinasModel->getAllDisciplinas($tipo);	
+		if($tipo==1)
+		{
+			$result = $this->disciplinasModel->getAllDisciplinasporano($tipo,$ano);		
+		}
+		else if ($tipo==2)
+		{
+			$result = $this->disciplinasModel->getAllDisciplinasprofissional($tipo);		
+		}
+		
+		
 		$ops='';
 		foreach ($result as $key => $value) 
 		{
@@ -191,12 +204,14 @@ class Disciplinas extends BaseController
 
 		$fields['id_disciplina'] = $this->request->getPost('id_disciplina');
 		$fields['nome'] = $this->request->getPost('nome');
+		$fields['id_disciplina_e360'] = $this->request->getPost('id_disciplina_e360');
 		$fields['horas'] = $this->request->getPost('horas');
 		$fields['tipologia_id'] = $this->request->getPost('tipologia_id');
 
-
+		
         $this->validation->setRules([
 			'nome' => ['label' => 'Nome da disciplina', 'rules' => 'required|min_length[0]|max_length[255]'],
+			'id_disciplina_e360' => ['label' => 'ID da disciplina no E360', 'rules' => 'required|min_length[0]|max_length[255]'],
             //'horas' => ['label' => 'Carga horária' ],
             'tipologia_id' => ['label' => 'Tipologia', 'rules' => 'required|min_length[0]|max_length[11]'],
 
@@ -236,7 +251,8 @@ class Disciplinas extends BaseController
 
 
         $this->validation->setRules([
-			            'nome' => ['label' => 'Nome da disciplina', 'rules' => 'required|min_length[0]|max_length[255]'],
+			'nome' => ['label' => 'Nome da disciplina', 'rules' => 'required|min_length[0]|max_length[255]'],
+			'id_disciplina_e360' => ['label' => 'ID da disciplina no E360', 'rules' => 'required|min_length[0]|max_length[255]'],//<-novo
             'horas' => ['label' => 'Carga horária', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
             'tipologia_id' => ['label' => 'Tipologia', 'rules' => 'required|min_length[0]|max_length[11]'],
 

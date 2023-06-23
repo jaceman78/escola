@@ -10,10 +10,7 @@ $this->section('content');
           <div class="row">
             <div class="col-10 mt-2">
               <h3 class="card-title">Disciplinas</h3>
-            </div>
-            <div class="col-2">
-              <button type="button" class="btn float-right btn-success" onclick="save()" title="<?= lang("App.new") ?>"> <i class="fa fa-plus"></i>   <?= lang('App.new') ?></button>
-            </div>
+
           </div>
         </div>
         <!-- /.card-header -->
@@ -22,6 +19,7 @@ $this->section('content');
             <thead>
               <tr>
               <th>Nome da disciplina</th>
+              <th>Cod E360</th>
               <th>Carga horária</th>
               <th>Tipologia</th>
 
@@ -53,6 +51,12 @@ $this->section('content');
 								<div class="form-group mb-3">
 									<label for="nome" class="col-form-label"> Nome da disciplina: <span class="text-danger">*</span> </label>
 									<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome da disciplina" minlength="0"  maxlength="255" required>
+								</div>
+							</div>
+              <div class="col-md-12">
+              <div class="form-group mb-3">
+									<label for="nome" class="col-form-label"> Cod E360: <span class="text-danger">*</span> </label>
+									<input type="text" id="id_disciplina_e360" name="id_disciplina_e360" class="form-control" placeholder="Código no E360" minlength="0"  maxlength="255" required>
 								</div>
 							</div>
 
@@ -185,6 +189,7 @@ $.get('/obter-dados-tipologia', function (data) {
           //insert data to form
           $("#data-form #id_disciplina").val(response.id_disciplina);
           $("#data-form #nome").val(response.nome);
+          $("#data-form #id_disciplina_e360").val(response.id_disciplina_e360);
           $("#data-form #horas").val(response.horas);
           $("#data-form #tipologia_id").val(response.tipologia_id);
 

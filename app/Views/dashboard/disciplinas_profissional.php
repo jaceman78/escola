@@ -13,6 +13,7 @@ $this->section('content');
             <thead>
               <tr>
               <th>Nome da disciplina</th>
+              <th>ID da disciplina no E360</th>
               <th>Carga horária</th>
               <th>Tipologia</th>
 

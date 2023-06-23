@@ -18,6 +18,7 @@ class User extends BaseController
 	    $this->userModel = new UserModel();
        	$this->validation =  \Config\Services::validation();
 		
+		
 	}
 	
 	public function index()
@@ -30,6 +31,13 @@ class User extends BaseController
 		
 		return view('dashboard/user', $data);
 			
+	}
+	public function getAllArrayNomes(){
+		$response = $data['data'] = array();	
+
+		$data = $this->userModel->select()->getAllNome();
+		return $this->response->setJSON($data);	
+
 	}
 
 	public function getAll()

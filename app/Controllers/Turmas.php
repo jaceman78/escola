@@ -16,9 +16,15 @@ class Turmas extends BaseController
 	
 	public function __construct()
 	{
+		helper('session');
+		if (!session()->get("LoggedUserData")) {
+		 session()->setFlashData("Error", "Your session has expired. Please login again.");
+		 return redirect()->to(base_url());
+	 }
 	    $this->turmasModel = new TurmasModel();
 		$this->AnoletivoModel = new AnoletivoModel();
        	$this->validation =  \Config\Services::validation();
+
 		
 	}
 	
@@ -46,7 +52,7 @@ class Turmas extends BaseController
 				 'pageTitle'		=> 'Turmas dos Cursos Regulares ',	
 				 'tipologia'		=> '1'					
 			];
-		
+
 		return view('dashboard/turmas_regular', $data);			
 	}
 

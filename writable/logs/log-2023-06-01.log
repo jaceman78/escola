@@ -1,0 +1,887 @@
+INFO - 2023-06-01 14:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 14:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 14:46:01 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 14:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 14:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 14:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-01 14:46:31 --> Undefined property: stdClass::$num_interno
+in APPPATH\Controllers\Aluno.php on line 125.
+ 1 APPPATH\Controllers\Aluno.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$num_interno', 'APPPATH\\Controllers\\Aluno.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-01 15:03:17 --> Undefined property: stdClass::$aid_aluno
+in APPPATH\Controllers\Aluno.php on line 125.
+ 1 APPPATH\Controllers\Aluno.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$aid_aluno', 'APPPATH\\Controllers\\Aluno.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:22:01 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:22:01 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`n_aluno`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:n_aluno:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:24:31 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:24:31 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`n_aluno`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:n_aluno:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-01 15:26:32 --> Undefined property: stdClass::$num_E360
+in APPPATH\Controllers\Aluno.php on line 125.
+ 1 APPPATH\Controllers\Aluno.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$num_E360', 'APPPATH\\Controllers\\Aluno.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:28:04 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:28:04 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:28:42 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:28:42 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-06-01 15:28:50 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:28:50 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:29:38 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:29:38 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:32:08 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:32:08 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 15:48:26 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 15:48:26 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(205): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 15:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 15:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 16:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-01 17:32:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Aluno.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Aluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#13 {main}
+CRITICAL - 2023-06-01 17:32:48 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aluno` (`num_E360`, `nome_aluno`, `genero`, `telemovel`, `email`, `foto_aluno`, `data_nasci`, `NIF`, `ee_id`, `NEE`, `delegado`, `status`) VALUES (:num_E360:, :nome_aluno:, :genero:, :telemovel:, :email:, :foto_aluno:, :data_nasci:, :NIF:, :ee_id:, :NEE:, :delegado:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aluno.php(206): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 17:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 17:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 17:57:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 17:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 17:57:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 17:57:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 17:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 17:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-06-01 17:57:26 --> mysqli_sql_exception: Unknown column 'aluno.num_interno' in 'on clause' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `turmalu...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `turmalu...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `turmalu...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmalu...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Models\TurmalunoModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmaluno.php(39): App\Models\TurmalunoModel->findAlunosTurma('48')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmaluno->getTurmaDetalhes('48')
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmaluno))
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Antoni...')
+#11 {main}
+CRITICAL - 2023-06-01 17:57:26 --> Unknown column 'aluno.num_interno' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `turmaluno`.*, `aluno`.*
+FROM `turmaluno`
+JOIN `aluno` ON `turmaluno`.`num_interno` = `aluno`.`num_interno`
+WHERE `turma_id` = :turma_id:
+ORDER BY `aluno`.`nome_aluno` ASC', [...], false)
+ 2 APPPATH\Models\TurmalunoModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Turmaluno.php(39): App\Models\TurmalunoModel->findAlunosTurma('48')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmaluno->getTurmaDetalhes('48')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmaluno))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 17:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 17:57:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 17:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 17:59:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 17:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 17:59:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 17:59:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:00:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:00:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:00:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:01:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:01:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:03:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:03:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:03:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:06:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:07:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:07:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:07:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:07:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:22:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:22:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:22:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:23:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:23:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:23:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:24:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:24:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:24:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-01 18:30:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\profile.php on line 18.
+ 1 APPPATH\Views\dashboard\profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\profile.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 5 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:39:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:41:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:41:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:41:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:41:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 18:43:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:43:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:49:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:49:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:51:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:51:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:52:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:52:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-01 18:56:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\profile.php on line 18.
+ 1 APPPATH\Views\dashboard\profile.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\profile.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile', [], true)
+ 5 APPPATH\Controllers\UserController.php(16): view('dashboard/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:56:58 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 18:59:00 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(61): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 18:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 18:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:00:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:00:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:00:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:01:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:01:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:01:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:01:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:01:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:01:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:01:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:01:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:03:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:03:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:03:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:03:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:03:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-01 19:03:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-06-01 19:03:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-06-01 19:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-01 19:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

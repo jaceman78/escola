@@ -3,10 +3,11 @@
 <base href="/">
 <script src="<?= base_url('js/jquery-3.6.0.min.js') ?>"></script>
 <!-- Bootstrap 5 with Popper.js-->
-
-<!-- overlayScrollbars -->
+<script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+<!-- overlayScrollbars --->
 <script src="<?= base_url('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') ?>"></script>
-<!-- AdminLTE App -->
+
+ 
 
 
 <!-- Page Global Script -->

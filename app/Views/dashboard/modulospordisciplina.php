@@ -7,12 +7,12 @@ $this->section('content');
 <div class="card">
         <div class="card-header">
           <div class="row">
-            <div class="col-10 mt-2">
+            <div class="col-9 mt-2">
               <h3 class="card-title">Módulos da disciplina de </h3>
             </div>
             
-            <div class="col-2">
-                <button type="button" class="btn float-left btn-light" onclick="history.back()" title="voltar"> <i class="fa-solid fa-arrow-left"></i>  Voltar   </button>
+            <div class="col-3">
+                <button type="button" class="btn float-left btn-info" onclick="history.back()" title="voltar"> <i class="fa-solid fa-arrow-left"></i>  Voltar   </button>
             <button type="button" class="btn float-right btn-success" onclick="save()" title="<?= lang("App.new") ?>"> <i class="fa fa-plus"></i>   <?= lang('App.new') ?></button>
           
 
@@ -26,9 +26,10 @@ $this->section('content');
               <tr>
               <th>Nome do módulo</th>
               <!-- <th>Disciplina id</th> -->
+              
+              <th>Ano</th>
               <th>Horas modulo</th>
-
-			  <th></th>
+			       <th>Opções</th>
               </tr>
             </thead>
           </table>
@@ -49,29 +50,42 @@ $this->section('content');
       <div class="modal-body">
         <form id="data-form" class="pl-3 pr-3">
           <div class="row">
-          <input type="hidden" id="id_modulo" name="id_modulo" class="form-control" placeholder="Id modulo" maxlength="11" required>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group mb-3">
-									<label for="nome_modulo" class="col-form-label"> Nome: <span class="text-danger">*</span> </label>
-									<input type="text" id="nome_modulo" name="nome_modulo" class="form-control" placeholder="Nome do modulo" minlength="0"  maxlength="255" required>
-								</div>
-							</div>
+            <input type="hidden" id="id_modulo" name="id_modulo" class="form-control" placeholder="Id modulo" maxlength="11" required>
+					</div>
+					<div class="row">
+            <input type="hidden" id="disciplina_id" name="disciplina_id" class="form-control" value="<?php echo($iddisciplina);?>" >
+					</div> 
 
-							<div class="col-md-12">
-              <input type="hidden" id="disciplina_id" name="disciplina_id" class="form-control" value="<?php echo($iddisciplina);?>" >
-								<!-- <div class="form-group mb-3">
-									<label for="disciplina_id" class="col-form-label"> Disciplina id: <span class="text-danger">*</span> </label>
-									<input type="number" id="disciplina_id" name="disciplina_id" class="form-control" placeholder="Disciplina id" minlength="0"  maxlength="11" required>
-								</div> -->
-							</div>
+					<div class="row">
+            <div class="col-md-12">
+              <div class="form-group mb-3">
+                <label for="nome_modulo" class="col-form-label"> Nome: <span class="text-danger">*</span> </label>
+                <input type="text" id="nome_modulo" name="nome_modulo" class="form-control" placeholder="Nome do modulo" minlength="0"  maxlength="255" required>
+              </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group mb-3">
+                  <label for="ano" class="col-form-label"> Ano: <span class="text-danger">*</span> </label>
+                  <select class="form-control select" id="ano" name="ano" required>
+                    <option value="">Selecione o ano</option>
+                    <option value="10">10º ano</option>
+                    <option value="11">11º ano</option>
+                    <option value="12">12º ano</option>    
+                  </select>        
+                    </div>
+                </div>
+              </div>
+              <div class="row">
 							<div class="col-md-12">
 								<div class="form-group mb-3">
 									<label for="horas_modulo" class="col-form-label"> Horas modulo: <span class="text-danger">*</span> </label>
 									<input type="number" id="horas_modulo" name="horas_modulo" class="form-control" placeholder="Horas modulo" minlength="0"  maxlength="11" required>
 								</div>
-							</div>
+							</div>  
+              </div>
 						</div>
 
           <div class="form-group text-center">
@@ -137,12 +151,12 @@ lista.appendChild(novoItem);
         "url": "https://cdn.datatables.net/plug-ins/1.13.2/i18n/pt-PT.json"
       },
       "paging": true,
-      "lengthChange": false,
+      "lengthChange": false, //Remove a opção de alterar o número de registos exibidos por página. Isso impede que o usuário modifique a quantidade de dados exibidos na tabela.
       "searching": true,
       "ordering": true,
       "info": true,
-      "autoWidth": false,
-      "scrollY": '45vh',
+      "autoWidth": false, //Desativa o ajuste automático da largura das colunas. Com essa opção desativada, as colunas não serão redimensionadas automaticamente para se ajustarem ao conteúdo.
+      "scrollY": '80vh',
       "scrollX": true,
       "scrollCollapse": false,
       "responsive": false,
@@ -196,6 +210,7 @@ lista.appendChild(novoItem);
           //insert data to form
           $("#data-form #id_modulo").val(response.id_modulo);
           $("#data-form #nome_modulo").val(response.nome_modulo);
+          $("#data-form #ano").val(response.ano);
           $("#data-form #disciplina_id").val(response.disciplina_id);
           $("#data-form #horas_modulo").val(response.horas_modulo);
 

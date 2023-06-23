@@ -46,7 +46,6 @@ class Turmadisciplina extends BaseController
 			'ano'				=> $resultturma->ano,
 			'nomedaturma'       => $resultturma->nome,
 			'tipo'				=> $resultturma->tipologia_id
-
 			];
 
 		return view('dashboard/turmadisciplina', $data,);			
@@ -231,12 +230,14 @@ class Turmadisciplina extends BaseController
 		$fields['id_turmadisciplina'] = $this->request->getPost('id_turmadisciplina');
 		$fields['turma_id'] = $this->request->getPost('turma_id');
 		$fields['disciplina_id'] = $this->request->getPost('disciplina_id');
+		$fields['user_id'] = $this->request->getPost('user_id');
 		$fields['carga_horaria'] = $this->request->getPost('carga_horaria');
 
 
         $this->validation->setRules([
-			            'turma_id' => ['label' => 'Turma id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
+			'turma_id' => ['label' => 'Turma id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
             'disciplina_id' => ['label' => 'Disciplina id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
+			'user_id' => ['label' => 'User id', 'rules' => 'required|numeric|min_length[0]|max_length[11]'],
             'carga_horaria' => ['label' => 'Carga horaria', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
 
         ]);
