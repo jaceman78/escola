@@ -1,0 +1,818 @@
+INFO - 2023-11-27 11:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 11:12:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 96.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile_aluno', [], true)
+ 6 APPPATH\Controllers\Aluno.php(73): view('dashboard/profile_aluno', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->profilealuno('18807')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 11:17:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 96.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile_aluno', [], true)
+ 6 APPPATH\Controllers\Aluno.php(77): view('dashboard/profile_aluno', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->profilealuno('18807')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 11:17:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\layout\dashboard-layout.php on line 96.
+ 1 APPPATH\Views\dashboard\layout\dashboard-layout.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\dashboard-layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/dashboard-layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/profile_aluno', [], true)
+ 6 APPPATH\Controllers\Aluno.php(77): view('dashboard/profile_aluno', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Aluno->profilealuno('18807')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aluno))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 11:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 11:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:36 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(68): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 11:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 11:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 11:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 11:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:10:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:10:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:01 --> [DEPRECATED] Creation of dynamic property Google\Service\Oauth2::$serviceName is deprecated in APPPATH\Libraries\vendor\google\apiclient-services\src\Oauth2.php on line 65.
+ 1 APPPATH\Controllers\LoginController.php(68): Google\Service\Oauth2->__construct(Object(Google\Client))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:11:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:11:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:36:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:36:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 15:36:27 --> "num interno" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('num interno')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('num_interno', 'num_interno', '00000', [...], [...])
+ 3 APPPATH\Controllers\Turmaluno.php(146): CodeIgniter\Validation\Validation->run([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmaluno->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmaluno))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 15:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 15:37:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 15:37:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:45:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:45:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:45:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:55:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:55:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:55:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:55:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:56:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:56:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:56:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:56:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:56:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:56:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 16:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:56:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:56:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 16:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 16:57:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 16:57:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 17:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 17:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:03:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:03:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-27 17:03:31 --> mysqli_sql_exception: Unknown column 'turmalunoanoletivo_id' in 'where clause' in C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('10067', 'num_interno', Array, NULL, 'num_interno')
+#6 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('num_interno', 'num interno', '10067', Array, Array)
+#7 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\app\Controllers\Turmaluno.php(146): CodeIgniter\Validation\Validation->run(Array)
+#8 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Turmaluno->add()
+#9 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmaluno))
+#10 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Antonio\Desktop\xampp\htdocs\CI4\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-27 17:03:31 --> Unknown column 'turmalunoanoletivo_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `turmaluno`
+WHERE `num_interno` = :num_interno:
+AND `turmalunoanoletivo_id` != :turmalunoanoletivo_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('10067', 'num_interno', [...], null, 'num_interno')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('num_interno', 'num interno', '10067', [...], [...])
+ 5 APPPATH\Controllers\Turmaluno.php(146): CodeIgniter\Validation\Validation->run([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Turmaluno->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Turmaluno))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:04:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:04:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 17:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:04:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:04:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:04:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 17:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$turmasModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmadisciplina::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmadisciplina.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmadisciplina->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 17:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:05:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-27 17:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-27 17:07:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$AnoletivoModel is deprecated in APPPATH\Controllers\Turmas.php on line 28.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-27 17:07:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Turmas::$turmalunoModel is deprecated in APPPATH\Controllers\Turmas.php on line 29.
+ 1 APPPATH\Controllers\Turmaluno.php(29): App\Controllers\Turmas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Turmaluno->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

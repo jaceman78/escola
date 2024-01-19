@@ -134,6 +134,7 @@ $routes->group("turmas", ['namespace' => 'App\Controllers'], function ($routes) 
     $routes->post('add', 'Turmas::add');
     $routes->post('edit', 'Turmas::edit');
     $routes->post('remove', 'Turmas::remove');
+    $routes->post('exportar', 'Turmas::exportar');
     ///////////////////////////////////////////////////
     $routes->post('getAllregular', 'Turmas::getAllregular');
     $routes->post('getAllprofissional', 'Turmas::getAllprofissional');
@@ -182,6 +183,7 @@ $routes->group("aluno", ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->post('add', 'Aluno::add');
     $routes->post('edit', 'Aluno::edit');
     $routes->post('remove', 'Aluno::remove');
+    $routes->post('obter_nome_aluno/(:num)', 'Aluno::obter_nome_aluno/$1');
 });
 
 //medidas_alunos

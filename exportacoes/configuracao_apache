@@ -1,0 +1,42 @@
+<VirtualHost *:80>
+    ServerAdmin antonioneto78@gmail.com
+    DocumentRoot "/Users/Antonio/Desktop/xampp/htdocs/CI4/public"
+    ServerName localhost
+
+    <Directory "/Users/Antonio/Desktop/xampp/htdocs/CI4/public">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog "logs/localhost-error.log"
+    CustomLog "logs/localhost-access.log" common
+</VirtualHost>
+
+
+Para executar seu aplicativo CodeIgniter 4 usando o servidor Apache em vez de usar o servidor de desenvolvimento embutido fornecido pelo Spark, você precisará configurar o Apache para servir seu aplicativo. Aqui estão os passos gerais que você deve seguir:
+
+Certifique-se de que o Apache e o PHP estejam instalados: Verifique se o Apache e o PHP estão instalados e funcionando corretamente em seu sistema. Você pode testar isso acessando um arquivo PHP simples em seu servidor web para garantir que o PHP esteja processando corretamente os scripts.
+
+Configurar o Apache Virtual Host: Você precisará configurar um Virtual Host no Apache para direcionar as solicitações para o diretório do seu projeto CodeIgniter. Aqui está um exemplo de como fazer isso:
+
+a. Abra o arquivo de configuração do Apache para o seu Virtual Host. O local exato do arquivo pode variar dependendo do sistema operacional e da configuração do Apache. Geralmente, é encontrado em um dos seguintes locais:
+
+Ubuntu/Linux: /etc/apache2/sites-available/
+Windows (XAMPP): C:\xampp\apache\conf\extra\httpd-vhosts.conf
+b. Dentro do arquivo de configuração do Virtual Host, adicione as seguintes linhas, ajustando-as de acordo com o caminho para o diretório raiz do seu projeto CodeIgniter:
+
+mathematica
+Copy code
+<VirtualHost *:80>
+    ServerName seu-dominio.local
+    DocumentRoot /caminho/para/seu/projeto/public
+    <Directory /caminho/para/seu/projeto/public>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+Certifique-se de substituir seu-dominio.local pelo nome de domínio desejado e /caminho/para/seu/projeto/public pelo caminho real para a pasta pública do seu projeto CodeIgniter.
+
+Ative o Virtual Host: No Ubuntu/Linux, você pode usar o seguinte comando para ativar o Virtual Host:

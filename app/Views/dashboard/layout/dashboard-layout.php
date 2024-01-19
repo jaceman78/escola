@@ -306,7 +306,7 @@
                 <li class="nav-item has-treeview2">
                   <a href="#" class="nav-link "  >
                       <i class="fas fa-minus nav-icon"></i>
-                      <p>Diciplinas
+                      <p>Disciplinas
                       <i class="right fas fa-angle-left"></i>
                       </p>
                   </a>  
@@ -529,6 +529,8 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+
+
   </div>
   <!-- /.content-wrapper -->
 
@@ -542,8 +544,11 @@
   </aside>
   <!-- /.control-sidebar -->
 
+
+</div>
+<!-- ./wrapper -->
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer" >
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
       Anything you want
@@ -551,9 +556,6 @@
     <!-- Default to the left -->
     <strong>Copyright &copy; 2023 <a href="<?=base_url();?>">AEJB</a>.</strong> Todos direitos reservados.
   </footer>
-</div>
-<!-- ./wrapper -->
-
 <!-- REQUIRED SCRIPTS -->
 
 

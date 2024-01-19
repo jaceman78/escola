@@ -26,19 +26,29 @@ $this->section('content');
         <li class="nav-item">
           <a class="nav-link " id="custom-tabs-four-PES-tab" data-toggle="pill" href="#custom-tabs-four-PES" role="tab" aria-controls="custom-tabs-four-PES" aria-selected="false">PES</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link " id="custom-tabs-four-ocorrencias-tab" data-toggle="pill" href="#custom-tabs-four-ocorrencias" role="tab" aria-controls="custom-tabs-four-ocorrencias" aria-selected="false">Ocorrências</a>
+        </li>
       </ul>
     </div>
+    <!-- CARD TURMA -->
     <div class="card-body">
       <div class="tab-content" id="custom-tabs-four-tabContent">
+        <!-- PANE HOME -->
         <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
           Conteudos Home preenchidos via ajax  
         </div>
+        <!-- FIM PANE HOME -->
+        <!-- PANE DISCIPLINAS -->
         <div class="tab-pane fade" id="custom-tabs-four-disciplinas" role="tabpanel" aria-labelledby="custom-tabs-four-disciplinas-tab">
           Conteudos das disciplinas preenchidos via ajax             
         </div>
+        <!-- FIM PANE DISCIPLINAS -->
+        <!-- PANE Alunos -->
         <div class="tab-pane fade" id="custom-tabs-four-alunos" role="tabpanel" aria-labelledby="custom-tabs-four-alunos-tab">
           Conteudos dos alunos preenchidos via ajax               
         </div>
+        <!-- FIM PANE ALUNOS -->
 
         <!-- PANE AVALIAÇÃO -->
         <div class="tab-pane fade" id="custom-tabs-four-avaliacao" role="tabpanel" aria-labelledby="custom-tabs-four-avaliacao-tab">
@@ -112,9 +122,11 @@ $this->section('content');
                <!-- /.card-body -->
            </div>  
           </div>
+          <!-- FIM PANE AVALIAÇÃO -->
 
 
-                  <!-- PANE PES  -->
+
+        <!-- PANE PES  -->
         <div class="tab-pane fade" id="custom-tabs-four-PES" role="tabpanel" aria-labelledby="custom-tabs-four-PES-tab">
           <!-- Default box -->
           <div class="row">
@@ -125,11 +137,21 @@ $this->section('content');
           </div>
         <!-- FIM PANE PES -->
 
+        <!-- PANE ocorrencias  -->
+        <div class="tab-pane fade" id="custom-tabs-four-ocorrencias" role="tabpanel" aria-labelledby="custom-tabs-four-ocorrencias-tab">
+          <!-- Default box -->
+          <div class="row">
 
+            ocorrencias
+          <!-- /.card-body -->
+          </div>  
+        </div>
+        <!-- FIM PANE ocorrencias -->
 
         </div>
         <!-- /.card -->
-      </div>
+    </div>
+    <!-- FIM CARD TURMA -->
   </div>
 
   <div id="card-container"></div>
@@ -142,7 +164,7 @@ $this->section('content');
   <div id="PerfilAluno" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
       <div class="modal-content">        
-        <div class="modal-header text-center bg-info p-3 " id="model-header-aluno">
+        <div class="modal-header text-center bg-info p-3 " id="model-header">
           <h4 class="modal-title text-white" id="info-header-aluno">TITULO</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -243,10 +265,6 @@ $this->section('content');
                         <input class="custom-control-input" type="checkbox" id="medidasCheckbox1" value="1">
                           <label for="medidasCheckbox1" class="custom-control-label">a) A diferenciação pedagógica.</label>
                         </div>
-                        <div class="custom-control custom-checkbox">                        
-                        <input class="custom-control-input" type="checkbox" id="medidasCheckbox1" value="1">
-                          <label for="customCheckbox1" class="custom-control-label"></label>
-                        </div>
                         <div class="custom-control custom-checkbox">                       
                         <input class="custom-control-input" type="checkbox" id="medidasCheckbox2" value="2">
                           <label for="medidasCheckbox2" class="custom-control-label">b) As acomodações curriculares.</label>
@@ -263,7 +281,9 @@ $this->section('content');
                           <input class="custom-control-input" type="checkbox" id="medidasCheckbox5" value="5"> 
                           <label for="medidasCheckbox5" class="custom-control-label">e) A intervenção com foco académico ou comportamental em pequenos grupos.</label>
                         </div>
-                        <label class="col-form-label"><i class="fas fa-check"></i> Medidas Seletivas [S] </label>
+                        <label class="col-form-label" for="medidasCheckbox6">
+                          <i class="fas fa-check"></i> Medidas Seletivas [S]
+                        </label>
                         <div class="custom-control custom-checkbox">
                           <input class="custom-control-input" type="checkbox" id="medidasCheckbox6" value="6">
                           <label for="medidasCheckbox6" class="custom-control-label">a) Os percursos curriculares diferenciados.</label>
@@ -312,20 +332,16 @@ $this->section('content');
                     </div>          
                   </div>
 
-
                   <div class="tab-pane" id="EE_tab" >
                     <!-- Conteudos tab EE -->
 
                     <?= (isset($ee_id))?$ee_id:'SEM idee';?>                                      
                   </div>
                   <div class="tab-pane" id="Aval_tab">
-
-
-
                   <!-- /.tab-pane -->
                 </div>
 
-
+                </div>
                 <!-- /.tab-content -->
               </div><!-- /.card-body -->
             </div>
@@ -341,46 +357,53 @@ $this->section('content');
     </div><!-- /.modal-dialog -->
   </div>
   <!---/PROFILE ALUNO  content -->
-
-
-
   <!-- ADD modal content ALUNO -->
-  <div id="data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div id="data-modal-aluno" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md">
       <div class="modal-content">
-        <div class="text-center bg-info p-3" id="model-header">
-          <h4 class="modal-title text-white" id="info-header-modalLabel"></h4>
+        <div class="text-center bg-info p-3" id="model-header-aluno">
+          <h4 class="modal-title text-white" id="info-header-modalLabel-aluno">Adicionar Aluno na turma <?php echo $nomedaturma;?></h4>
         </div>
         <div class="modal-body">
-          <form id="data-form" class="pl-3 pr-3">
+          <form id="data-form-aluno" class="pl-3 pr-3">
             <div class="row">
             <input type="hidden" id="id_turmaaluno" name="id_turmaaluno" class="form-control" placeholder="Id turmaaluno" maxlength="11" required>
               </div>
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group mb-3">
-                    <label for="anoletivo_id" class="col-form-label"> Anoletivo: </label>
+                    <label for="anoletivo_id" class="col-form-label"> Ano letivo: <span  id="ano_letivo_span" class="text-danger"><?php echo $anoletivo;?></span></label>
                     <input type="hidden" value="1" id="anoletivo_id" name="anoletivo_id" class="form-control" placeholder="Anoletivo id" minlength="0"  maxlength="11" >
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group mb-3">
-                    <label for="turma_id" class="col-form-label"> Turma: <span class="text-danger"><?php echo $nomedaturma;?></span> </label>
+                    <label for="turma_id" class="col-form-label"> Turma: <span  id="turma_span" class="text-danger"><?php echo $nomedaturma;?></span> </label>
                     <input type="hidden" value="<?php echo $idturma;?>" id="turma_id" name="turma_id" class="form-control" placeholder="Turma id" minlength="0"  maxlength="11" required>
+                  
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group mb-3">
                     <label for="num_interno" class="col-form-label"> Num interno: <span class="text-danger">*</span> </label>
-                    <input type="number" id="num_interno" name="num_interno" class="form-control" placeholder="Num interno" minlength="0"  maxlength="11" required>
+                    <input type="number" id="num_interno" name="num_interno" class="form-control" placeholder="Num interno" minlength="5"  maxlength="5" required>
                   </div>
                 </div>
+
+
+                <div class="col-md-12">
+                  <div class="form-group mb-3">
+                    <label for="nome_aluno" class="col-form-label"> Nome aluno:</label>
+                    <input type="text" id="nome_aluno" name="nome_aluno" class="form-control" placeholder="Nome do aluno"  disabled>
+                  </div>
+                </div>
+
               </div>
 
             <div class="form-group text-center">
               <div class="btn-group">
-                <button type="submit" class="btn btn-success mr-2" id="form-btn"><?= lang("App.save") ?></button>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><?= lang("App.cancel") ?></button>
+                <button type="submit" class="btn btn-success mr-2" id="form-btn" disabled><?= lang("App.save") ?></button>
+                <button type="button" class="btn btn-danger"  data-bs-dismiss="modal"><?= lang("App.cancel") ?></button>
               </div>
             </div>
           </form>
@@ -389,6 +412,9 @@ $this->section('content');
     </div><!-- /.modal-dialog -->
   </div>
   <!-- /ADD modal content -->
+
+
+
 
 
 
@@ -480,6 +506,44 @@ $this->section('content');
   novoItem.appendChild(novoLink);
   // adiciona o novo elemento li à lista existente
   lista.appendChild(novoItem);    
+
+/////////////////PREENCHIMENTO MODAL DE ADICINAR ALUNO
+
+    $(document).ready(function(){
+        // Adiciona um evento de mudança ao campo num_interno
+        $('#num_interno').change(function(){
+            // Obtém o valor do campo num_interno
+            var numInterno = $(this).val();
+
+            // Faça uma solicitação Ajax para obter o nome do aluno com base no num_interno
+            $.ajax({
+                url: 'aluno/obter_nome_aluno/' + numInterno,
+                type: 'POST',
+                dataType: 'json',
+                success: function(response){
+                    //console.log(response);
+                    // Atualiza o valor do campo nome_aluno com o nome obtido
+                    if(response.alunos.length > 0)
+                    {
+                      $('#nome_aluno').val(response.alunos[0].nome_aluno);
+                      $('#form-btn').prop('disabled', false);
+                    }
+                    else{
+                      $('#nome_aluno').val('Aluno não encontrado');
+                      $('#form-btn').prop('disabled', true);
+                    }
+                    
+                },
+                error: function(){
+                  console.log('Erro ao obter o nome do aluno.');
+                }
+            });
+        });
+    });
+
+
+
+
 
 
  ///////////////////////////////////////PREENCHIMENTO SEPARADOR DISCIPLINAS
@@ -643,7 +707,7 @@ $this->section('content');
                 } else {
                   Swal.fire({
                     toast: false,
-                    position: 'bottom-end',
+                    position:'top-end',
                     icon: 'error',
                     title: response.messages,
                     showConfirmButton: false,
@@ -667,9 +731,10 @@ $this->section('content');
 }
 
 
- ///////////////////////////////////////PREENCHIMENTO SEPARADOR ALUNOS
-  $(document).ready(function() {
-      var id_turma = "<?php echo $idturma; ?>";
+  //////////////////////////////////////PREENCHIMENTO SEPARADOR ALUNOS
+function setupSeparadorAlunos( )
+{
+  var id_turma = "<?php echo $idturma; ?>";
       $.ajax({
           url: "/turmaluno/getTurmaDetalhes/" + id_turma,
           type: "POST",
@@ -730,7 +795,18 @@ $this->section('content');
               $('#custom-tabs-four-alunos').html(cards);
           }
       });
+  }
+
+
+  $(document).ready(function() {
+    setupSeparadorAlunos();
+    // Exemplo de uso: chamar a função  setupSeparadorAlunos() novamente para atualizar o conteúdo
+    // loadCustomTabs();
   });
+
+
+
+
   ///////////////////////////////////////PREENCHIMENTO SEPARADOR HOME
   $(document).ready(function() {
       var id_turma = "<?php echo $idturma; ?>";
@@ -754,7 +830,6 @@ $this->section('content');
           }
       });
   });
-
 
   //////////////////////////////////////// APAGAR ALUNO INSCRITO
 
@@ -789,6 +864,7 @@ function removealunodaturma(id_turmaaluno) {
             }).then(function() {
               //$('#data_table').DataTable().ajax.reload(null, false).draw(false);
               location.reload(); //Reload após edição
+              
             })
           } else {
             Swal.fire({
@@ -801,9 +877,13 @@ function removealunodaturma(id_turmaaluno) {
             })
           }
         }
+
+        
       });
     }
+    
   })      
+  
 }
 
 
@@ -817,20 +897,18 @@ function removealunodaturma(id_turmaaluno) {
     }
 
 
-//////////////////////////////FUNCTION VER PERFIL ALUNO ///////////////////////////////////////////////7
+//////////FUNCTION VER PERFIL ALUNO
      
 
 function Aluno(id_aluno) {
   $('#PerfilAluno').modal('show');
-  console.log(id_aluno); //Controlo (apagar)
-
 
   $(document).on('change', 'input[type="checkbox"]', function () {
   var medidaId = $(this).attr('id').replace('medidasCheckbox', '');
   var alunoId = id_aluno; // 
 
   if (!$(this).is(':checked')) {
-      // Desmarcou a checkbox, enviar solicitação Ajax para remover o registro correspondente
+      // Desmarcou a checkbox, enviar solicitação Ajax para remover o registo correspondente
       $.ajax({
           url: '/medidas_alunos/delete',
           type: 'POST',
@@ -840,7 +918,7 @@ function Aluno(id_aluno) {
               alunoId: alunoId
           },
           success: function (response) {
-              console.log('Medida removida da base de dados com sucesso');
+              console.log('Medida removida da base de dados com sucesso! 921');
           },
           error: function (xhr, status, error) {
               console.error(error);
@@ -848,9 +926,6 @@ function Aluno(id_aluno) {
       });
     }
   });
-
-
-
 
   $.ajax({       
     url: '/aluno/profilealunoModal/' + id_aluno,
@@ -874,7 +949,7 @@ function Aluno(id_aluno) {
           url: '/aluno/EEdetalhes/'+ data.ee_id,   
           type: 'post',
           dataType: 'json',
-          success: function(dataee){
+          success: function(dataee){ //Card do Encarregado de Educação
             console.log(dataee);
             // Crie as cards com os dados recebidos
             var htmlEE = '';   
@@ -903,28 +978,29 @@ function Aluno(id_aluno) {
       type: 'GET',
       dataType: 'json',
       success: function (response) {
-        // Marque as checkboxes correspondentes aos registros retornados
+        // Marque as checkboxes correspondentes aos registos retornados
         response.registros.forEach(function (registro) {
             $('#medidasCheckbox' + registro.medidaDL54_id).prop('checked', true);
         });
       },
       error: function (xhr, status, error) {
-        console.error(error);
-        }
-      });
+    console.error(error);
+      }
+    });
 
 
              
-      // Desmarcar todas as checkboxes Dificuldades
+      // Desmarcar todas as checkboxes Dificuldades (separador Avaliações)
       $('input[type="checkbox"]').prop('checked', false);
-        $.ajax({
+      $.ajax({
       url: '/alunodisciplina/index/' + data.id_aluno,
       type: 'GET',
       dataType: 'json',
       success: function (response) {
-        // Marque as checkboxes correspondentes aos registros retornados
+        // Marque as checkboxes correspondentes aos registos retornados
         response.registros.forEach(function (registro) {
             $('#customSwitch' + registro.disciplina_id).prop('checked', true);
+            $('#piButton'+ registro.disciplina_id).prop('disabled',false);
         });
       },
       error: function (xhr, status, error) {
@@ -953,27 +1029,32 @@ function Aluno(id_aluno) {
       type: "POST",
       dataType: "json",
       success: function(data) {
-        var cards = '<div class="row">';
-        cards += '<div class="col-12 col-sm-12 col-md-12 d-flex align-items-stretch flex-column">';
-        cards += '<p class="text-center ">Disciplinas em que o aluno tem dificuldades:</p>';
+        var cards = '<h2><p class="text-center text-info" ">Disciplinas em que o aluno tem dificuldades:</p></h2>';
+         cards += '<div class="row">';
+            
         
         
         data.forEach(function(turmaDisciplina) {
-          cards += '<div class="form-group">'; 
-            cards += '<div class="col-12 col-sm-6 col-md-6 d-flex align-items-stretch flex-column">';
+         
+            cards += '<div class="col-6 col-sm-6 col-md-6>';
+             cards += '<div class="form-group">'; 
+           
               cards += '<div class="card bg-light d-flex flex-fill">';
-                cards += '<div class="card-header text-muted border-bottom-0">Disciplina: ' + turmaDisciplina.nomedisc+turmaDisciplina.id_disciplina+ '</div>';
-                cards += '<div class="card-body pt-0">';
+                cards += '<div class="card-header text-muted border-bottom-0">Disciplina: ' + turmaDisciplina.nomedisc+ '</div>';
+                   cards += '<div class="card-body pt-0">';
                                                                     
                     cards += '<div class="custom-control custom-switch">';
-                    cards += '<input class="custom-control-input" type="checkbox"  id="customSwitch'+turmaDisciplina.id_disciplina+'" onclick=updateDisciplina('+turmaDisciplina.id_disciplina+')>'; 
-                    cards += '<label class="custom-control-label" for="customSwitch'+turmaDisciplina.id_disciplina+'">Ative para assinalar</label>';                    
-                    cards += '</div>';                                   
+                    cards += '<input class="custom-control-input" type="checkbox"  id="customSwitch'+turmaDisciplina.id_disciplina+'" onclick=updateDisciplina('+turmaDisciplina.id_disciplina+')></input>'; 
+                    cards += '<label class="custom-control-label" for="customSwitch'+turmaDisciplina.id_disciplina+'">Ative para assinalar</label>';                                      
+                    cards += '</div>';
+
+                    cards += '<div><p><button type="button"  id="piButton'+turmaDisciplina.id_disciplina+'" data-toggle="modal" onclick="PlanoIndividual('+turmaDisciplina.id_disciplina+',' + id_aluno+')" class="btn btn-sm btn-primary" disabled>';                 
+                    cards += '<i class="fa fa-id-card"></i> PI </button></p></div>';
                 cards += '</div>';              
-              
+
             cards += '</div>';
             cards += '</div>';
-          cards += '</div>';  
+          //  cards += '</div>';  
         });
         
         cards += '</div>';
@@ -993,9 +1074,11 @@ function updateDisciplina(checkbox) {
         var disciplinaId = checkbox; //
         console.log($(this));
         var alunoId = $('#aluno_id').val(); // Substitua pelo valor correto do ID do aluno
+        var piButton = document.getElementById("piButton"+disciplinaId);  //tratamento PI button                
+
 
         if ($('#customSwitch'+checkbox).is(':checked')) {
-          
+          piButton.disabled = false;//tratamento PI button
             // Se a checkbox estiver marcada, inserir o registro
             $.ajax({
                 url: '<?= base_url('alunodisciplina/atualizar') ?>',
@@ -1011,8 +1094,11 @@ function updateDisciplina(checkbox) {
                     // Tratar a resposta do servidor (opcional)
                 }
             });
+
         } else {
-          //  Se a checkbox estiver desmarcada, excluir o registro
+          console.log(piButton);
+          piButton.disabled = true;
+          //  Se a checkbox estiver desmarcada, excluir o registo
             $.ajax({
                 url: '<?= base_url('alunodisciplina/delete') ?>',
                 method: 'POST',
@@ -1067,43 +1153,26 @@ checkboxes.change(function () {
 
 
 
-      ////////////////FUNCTION INSERIR ALUNO NA TURMA
+  /////////////////////FUNCTION INSERIR ALUNO NA TURMA
     function save(id_turmaaluno) {
       // reset the form 
-      $("#data-form")[0].reset();
-      $(".form-control").removeClass('is-invalid').removeClass('is-valid');
-      if (typeof id_turmaaluno === 'undefined' || id_turmaaluno < 1) { //add
-        urlController = '<?= base_url("turmaluno/add") ?>';
-        submitText = '<?= lang("App.save") ?>';
-        $('#model-header').removeClass('bg-info').addClass('bg-success');
-        $("#info-header-modalLabel").text('<?= lang("App.add") ?>');
-        $("#form-btn").text(submitText);
-        $('#data-modal').modal('show');
       
-      } else { //edit
-        urlController = '<?= base_url($controller . "/edit") ?>';
-        submitText = '<?= lang("App.update") ?>';
-        $.ajax({
-          url: '<?php echo base_url($controller . "/getOne") ?>',
-          type: 'post',
-          data: {
-            id_turmaaluno: id_turmaaluno
-          },
-          dataType: 'json',
-          success: function(response) {
-            $('#model-header').removeClass('bg-success').addClass('bg-info');
-            $("#info-header-modalLabel").text('<?= lang("App.edit") ?>');
-            $("#form-btn").text(submitText);
-            $('#data-modal').modal('show');
-            //insert data to form
-            $("#data-form #id_turmaaluno").val(response.id_turmaaluno);
-            $("#data-form #anoletivo_id").val(response.anoletivo_id);
-            $("#data-form #turma_id").val(response.turma_id);
-            $("#data-form #num_interno").val(response.id_aluno);
+      $("#data-form-aluno")[0].reset();
+      $(".form-control").removeClass('is-invalid').removeClass('is-valid');
+     
+        submitText = '<?= lang("App.save") ?>';
+        $('#model-header-aluno').removeClass('bg-info').addClass('bg-success');
+        $("#info-header-modalLabel-aluno").text('Adicionar Aluno na turma '.$nomedaturma);
+        $("#form-btn").text(submitText);
 
-          }
-        });
-      }
+        $('#data-modal-aluno').modal('show');
+        //console.log("1155");
+
+        if (typeof id_turmaaluno === 'undefined' || id_turmaaluno < 1) { //add
+        urlController = '<?= base_url("turmaluno/add") ?>';
+       } 
+
+
       $.validator.setDefaults({
         highlight: function(element) {
           $(element).addClass('is-invalid').removeClass('is-valid');
@@ -1128,7 +1197,7 @@ checkboxes.change(function () {
           }
         },
         submitHandler: function(form) {
-          var form = $('#data-form');
+          var form = $('#data-form-aluno');
           $(".text-danger").remove();
           $.ajax({
             // fixBug get url from global function only
@@ -1141,7 +1210,7 @@ checkboxes.change(function () {
             beforeSend: function() {
               $('#form-btn').html('<i class="fa fa-spinner fa-spin"></i>');
             },
-            success: function(response) {
+            success: function(response) {console.log("1199");
               if (response.success === true) {
                 Swal.fire({
                   toast: true,
@@ -1149,10 +1218,15 @@ checkboxes.change(function () {
                   icon: 'success',
                   title: response.messages,
                   showConfirmButton: false,
-                  timer: 1500
-                }).then(function() {
-                  $('#data_table').DataTable().ajax.reload(null, false).draw(false);
-                  $('#data-modal').modal('hide');
+                  timer: 2000
+                }).then(function() {console.log("1208");
+                 // $('#data_table').DataTable().ajax.reload(null, false).draw(false);
+                  //$('#data-modal-aluno').modal('hide');
+                  $(".form-control").removeClass('is-invalid').removeClass('is-valid');
+                  $('#nome_aluno').val('');
+                  $('#num_interno').val('');
+                  $('#form-btn').prop('disabled', true);      
+
                 })
               } else {
                 if (response.messages instanceof Object) {
@@ -1163,11 +1237,12 @@ checkboxes.change(function () {
                       .removeClass('is-valid')
                       .addClass(value.length > 0 ? 'is-invalid' : 'is-valid');
                     ele.after('<div class="invalid-feedback">' + response.messages[index] + '</div>');
+                  
                   });
                 } else {
                   Swal.fire({
                     toast: false,
-                    position: 'bottom-end',
+                    position: 'top',
                     icon: 'error',
                     title: response.messages,
                     showConfirmButton: false,
@@ -1177,21 +1252,22 @@ checkboxes.change(function () {
                 }
               }
               $('#form-btn').html(getSubmitText());
-              location.reload(); //Reload após edição
+              setupSeparadorAlunos(); // reload the data
             }
             
           });
+          console.log("1247");
           return false;
         }
       });
-
-      $('#data-form').validate({
-
+      console.log("1251");
+      $('#data-form-aluno').validate({
         //insert data-form to database
-
+        
       });
+      console.log("1256");
     }
-        ////////////////////APAGAR  ////////////////REMOVER ALUNO DA TURMA
+  ////////////////////APAGAR  ////////////////REMOVER ALUNO DA TURMA
 
     function remove(id_turmaprofessor) {
       Swal.fire({

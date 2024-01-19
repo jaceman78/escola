@@ -25,6 +25,10 @@ class Aluno extends BaseController
 	public function index()
 	{
 
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 	    $data = [
                 'controller'    	=> 'aluno',
                 'title'     		=> 'aluno',		
@@ -98,6 +102,14 @@ class Aluno extends BaseController
 		
 	  }
 	  
+
+	public function obter_nome_aluno($num_interno) {
+    // consulta  para obter todos os alunos que tenham os primeiros números inseridos
+    $alunos = $this->alunoModel->obter_nome_por_num_interno($num_interno);
+
+	///echo "<pre>"; print_r($alunos);
+    return $this->response->setJSON(['alunos' => $alunos]);
+}
 
 
 	public function getAll()

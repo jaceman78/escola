@@ -25,7 +25,7 @@ class Anoletivo extends BaseController
 
 	    $data = [
                 'controller'    	=> 'anoletivo',
-                'title'     		=> 'Ano letibo',	
+                'title'     		=> 'Anos letivos',	
 			 	'pageTitle'			=> 'Ano Letivo'		
 			];
 		return view('dashboard/anoletivo', $data);
@@ -72,7 +72,7 @@ class Anoletivo extends BaseController
 			$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
 			$ops .= '<div class="dropdown-menu">';
 			$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_anoletivo .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
-			$ops .= '<a class="dropdown-item text-orange" ><i class="fa-solid fa-copy"></i>   ' .  lang("App.copy")  . '</a>';
+			//$ops .= '<a class="dropdown-item text-orange"  onClick="importar('. $value->id_anoletivo .')"><i class="fa-solid fa-cogs"></i>   ' .  "importar"  . '</a>';
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_anoletivo .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 			$ops .= '</div></div>';

@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+use App\Controllers\Anoletivo;
+
 $this->extend('dashboard/layout/dashboard-layout');
 $this->section('content');
 ?>
@@ -72,9 +75,7 @@ $this->section('content');
 								<div class="form-group mb-3">
 									<label for="anoletivo_id" class="col-form-label"> Ano Letivo: <span class="text-danger">*</span> </label>
 									<select id="anoletivo_id" name="anoletivo_id" class="form-select" required>
-                  <option value="select1">select1</option>
-                  <option value="select2">select2</option>
-									<option value="select3">select3</option>
+
                                     
 									</select>
 								</div>
@@ -128,8 +129,7 @@ $.get('/obter-dados-anoletivo', function (data) {
 
 
 $.get('/obter-dados-anoletivo', function (data) {
-  var options = '';
-  
+  var options = '';  
     $.each(data, function (i, item) {          
       options += data[i] + '">' + data[i+1] ;
                     i++;
@@ -175,9 +175,7 @@ $.get('/obter-dados-tipologia', function (data) {
         async: "true"
       }
     });
- // $anoletivoescolhido=$(this).val();  
- //    var options= "<option value=" + $(this).val() + 'selected>'+ $(this).val() + '</option>';
-    //  $('#anoletivomodal_id').html(options); 
+
 
     $("#anoletivofiltro_id").on("change", function(){ 
       $myurl ='<?php echo base_url($controller . "/getAllporAnoletivo") ?>/'
@@ -321,7 +319,58 @@ $.get('/obter-dados-tipologia', function (data) {
     });
   }
 
+  
+function exportar(id_turma){
 
+  Swal.fire({
+      title: "Exportar dados da turma",
+      text: 'Vai exportar os dados da turma para o ano letivo seguinte. Deseja continuar?' <?php $id_turma?> ,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+
+      confirmButtonText: '<?= lang("App.confirm") ?>',
+      cancelButtonText: '<?= lang("App.cancel") ?>'
+    }).then((result) => {
+
+      if (result.value) {
+        $.ajax({
+          url: '<?php echo base_url($controller . "/exportar") ?>',
+          type: 'post',
+          data: {
+            id_turma : id_turma
+          },
+          dataType: 'json',
+          success: function(response) {
+
+            if (response.success === true) {
+              Swal.fire({
+                toast:true,
+                position: 'top-end',
+                icon: 'success',
+                title: response.messages,
+                showConfirmButton: false,
+                timer: 3000
+              }).then(function() {
+                $('#data_table').DataTable().ajax.reload(null, false).draw(false);
+              })
+            } else {
+              Swal.fire({
+                toast:false,
+                position: 'bottom-end',
+                icon: 'error',
+                title: response.messages,
+                showConfirmButton: false,
+                timer: 3000
+              })
+            }
+          }
+        });
+      }
+    })
+
+}
 
   function remove(id_turma) {
     Swal.fire({

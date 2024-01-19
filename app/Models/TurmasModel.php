@@ -55,10 +55,10 @@ class TurmasModel extends Model {
         $db = \Config\Database::connect();
 
         $query = $db->table('turma')
-		->select('turma.*, ano_letivo.anoletivo,tipologia.nome_tipologia ')
+		->select('turma.*, ano_letivo.anoletivo,tipologia.nome_tipologia,ano_letivo.status ')
 		->join('tipologia','tipologia.id_tipologia=turma.tipologia_id' )
 		->join('ano_letivo', 'ano_letivo.id_anoletivo = turma.anoletivo_id')
-		->where('anoletivo_id',1)
+		->where('ano_letivo.status',1)
 		->where('tipologia_id',1)
 			->orderby('nome','ASC')
             ->get();
@@ -70,10 +70,10 @@ class TurmasModel extends Model {
         $db = \Config\Database::connect();
 
         $query = $db->table('turma')
-		->select('turma.*, ano_letivo.anoletivo,tipologia.nome_tipologia ')
+		->select('turma.*, ano_letivo.anoletivo,tipologia.nome_tipologia,ano_letivo.status ')
 		->join('tipologia','tipologia.id_tipologia=turma.tipologia_id' )
 		->join('ano_letivo', 'ano_letivo.id_anoletivo = turma.anoletivo_id')
-		->where('anoletivo_id',1)
+		->where('ano_letivo.status',1)
 		->where('tipologia_id',2)
 			->orderby('nome','ASC') 
             ->get();
