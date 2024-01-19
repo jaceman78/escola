@@ -33,4 +33,15 @@ class AlunoModel extends Model {
         }
     }
 	
+	public function obter_nome_por_num_interno($num_interno) {
+    // Faz uma consulta  àBD para obter todos os alunos que tenham os primeiros números inseridos
+    $query = $this->db->table('aluno')->where('id_aluno', $num_interno)->get();
+
+    // Retorna os resultados como um array
+    return $query->getResultArray();
+	}
+
+
+
+	
 }

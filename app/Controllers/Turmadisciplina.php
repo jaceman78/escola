@@ -7,6 +7,7 @@ use App\Controllers\BaseController;
 
 use App\Models\TurmadisciplinaModel;
 use App\Models\TurmasModel;
+use App\Models\AnoletivoModel;
 
 class Turmadisciplina extends BaseController
 {
@@ -20,6 +21,7 @@ class Turmadisciplina extends BaseController
 	{
 	    $this->turmadisciplinaModel = new TurmadisciplinaModel();
 		$this->turmasModel = new TurmasModel();		
+		$this->AnoletivoModel = new AnoletivoModel();		
        	$this->validation =  \Config\Services::validation();	
 	}
 	
@@ -35,6 +37,10 @@ class Turmadisciplina extends BaseController
 
 	public function indexporturma($id_turma)
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 		$result = $this->turmadisciplinaModel->findAllporTurma($id_turma);
 		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();		
 
@@ -54,17 +60,29 @@ class Turmadisciplina extends BaseController
 
 
 	public function turmadetalhes($id_turma)	{
+
+
+		// Verifica se a sessão expirou
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 		//$result = $this->turmadisciplinaModel->findAllporTurma($id_turma);
 		$resultturma = $this->turmasModel->where('id_turma' ,$id_turma)->first();
 	    $data = [
 			'controller'    	=> 'turmadisciplina',
-			'title'     		=> 'Detalhes da turma '.$resultturma->nome	,
-			'pageTitle'			=> 'Detalhes da turma '	.$resultturma->nome,		
+			'title'     		=> 'Detalhes da turma '.$resultturma->ano.$resultturma->nome,
+			'pageTitle'			=> 'Detalhes da turma '	.$resultturma->ano.$resultturma->nome,		
 			'idturma'			=> $id_turma,
 			'ano'				=> $resultturma->ano,
 			'nomedaturma'       => $resultturma->nome,
-			'tipo'				=> $resultturma->tipologia_id
+			'tipo'				=> $resultturma->tipologia_id,
+		
 			];
+			$resultturma1 = $this->AnoletivoModel->where('id_anoletivo' ,$resultturma->anoletivo_id)->first();
+			$data['anoletivo'] = $resultturma1->anoletivo;
+	
+			
 		
 		return view('dashboard/turmadetalhesreg', $data);			
 	}
@@ -72,6 +90,10 @@ class Turmadisciplina extends BaseController
 
 	public function getAll()
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
  		$response = $data['data'] = array();	
 
 		$result = $this->turmadisciplinaModel->select()->findAll();		
@@ -99,6 +121,10 @@ class Turmadisciplina extends BaseController
 
 	public function getDisciplinaDetalhes($id_turma) //cards lista todos os detalhes das disciplinas
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 	$data = $this->turmadisciplinaModel->findAllporTurma($id_turma);	
 	//echo "<pre>"; print_r($data);
 	return $this->response->setJSON($data);
@@ -108,6 +134,10 @@ class Turmadisciplina extends BaseController
 
     public function getAllTurmadisciplina($turma_id)
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
  		$response = $data['data'] = array();
 		$result = $this->turmadisciplinaModel->findAllporTurma($turma_id);		
 		foreach ($result as $key => $value) {							

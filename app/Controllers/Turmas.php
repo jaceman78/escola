@@ -6,6 +6,9 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\AnoletivoModel; //20-02-2023
 use App\Models\TurmasModel;
+use App\Models\TurmalunoModel; //27/09/2023
+use CodeIgniter\CLI\Console;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 $db = \Config\Database::connect();
 class Turmas extends BaseController
@@ -23,6 +26,7 @@ class Turmas extends BaseController
 	 }
 	    $this->turmasModel = new TurmasModel();
 		$this->AnoletivoModel = new AnoletivoModel();
+		$this->turmalunoModel = new TurmalunoModel(); //27/09/2023
        	$this->validation =  \Config\Services::validation();
 
 		
@@ -46,6 +50,12 @@ class Turmas extends BaseController
 	
 	public function indexregular()
 	{
+		
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
+
 	    $data = [
                  'controller'    	=> 'turmas',
                  'title'     		=> 'Turmas Regular',
@@ -119,6 +129,7 @@ class Turmas extends BaseController
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 		$ops .= '<div class="dropdown-divider"></div>';
+		$ops .= '<a class="dropdown-item text-success" onClick="exportar('. $value->id_turma .')"><i class="fa-solid fa-cogs"></i>   ' .  "Exportar"  . '</a>';
 		$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 		$ops .= '</div></div>';
 
@@ -152,6 +163,7 @@ class Turmas extends BaseController
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 		$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 		$ops .= '<div class="dropdown-divider"></div>';
+		$ops .= '<a class="dropdown-item text-success" onClick="exportar('. $value->id_turma .')"><i class="fa-solid fa-cogs"></i>   ' .  "Exportar"  . '</a>';
 		$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
 		$ops .= '</div></div>';
 
@@ -183,10 +195,11 @@ class Turmas extends BaseController
 			$ops .= '<i class="fa-solid fa-pen-square"></i>  </button>';
 			$ops .= '<div class="dropdown-menu">';
 			$ops .= '<a class="dropdown-item text-info" onClick="save('. $value->id_turma .')"><i class="fa-solid fa-pen-to-square"></i>   ' .  lang("App.edit")  . '</a>';
-			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
+			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/turmadetalhes/'. $value->id_turma  .'"><i class="fa-solid fa-eye"></i>' .  lang("App.detalhes")  . '</a>';
 			$ops .= '<a type="button" class=" dropdown-item btn-info" href="turmadisciplina/indexporturma/'. $value->id_turma  .'"><i class="fa-solid fa-square-plus"></i>' .  lang("App.adddisciplina")  . '</a>';
 			$ops .= '<div class="dropdown-divider"></div>';
 			$ops .= '<a class="dropdown-item text-danger" onClick="remove('. $value->id_turma .')"><i class="fa-solid fa-trash"></i>   ' .  lang("App.delete")  . '</a>';
+			$ops .= '<a class="dropdown-item text-success" onClick="exportar('. $value->id_turma .')"><i class="fa-solid fa-cogs"></i>   ' .  "Exportar"  . '</a>';
 			$ops .= '</div></div>';
 
 			$data['data'][$key] = array(
@@ -260,7 +273,7 @@ class Turmas extends BaseController
 
         $this->validation->setRules([
 			'ano' => ['label' => 'Ano Escolar', 'rules' => 'required|numeric|min_length[0]|max_length[11]',
-					 'errors' => ['required' => 'Deve escolher um ano letivo.']],
+			'errors' => ['required' => 'Deve escolher um ano letivo.']],
             
 			'nome' => ['label' => 'Nome', 'rules' => 'required|min_length[0]|max_length[63]'],
             'anoletivo_id' => ['label' => 'Ano Letivo', 'rules' => 'required|min_length[0]|max_length[11]'],
@@ -331,23 +344,71 @@ class Turmas extends BaseController
 			$response['messages'] = $this->validation->getErrors();//Show Error in Input Form
 
         } else {
-
-            if ($this->turmasModel->update($fields['id_turma'], $fields)) {
-				
+            if ($this->turmasModel->update($fields['id_turma'], $fields)) {				
                 $response['success'] = true;
-                $response['messages'] = lang("App.update-success");	
-				
-            } else {
-				
+                $response['messages'] = lang("App.update-success");					
+            } else {				
                 $response['success'] = false;
-                $response['messages'] = lang("App.update-error");
-				
+                $response['messages'] = lang("App.update-error");				
             }
         }
 		
         return $this->response->setJSON($response);	
 	}
 	
+	public function exportar()
+	{
+		$response = array();
+		echo '<pre>';
+		
+		$id = $this->request->getPost('id_turma');
+		$data = $this->turmasModel->where('id_turma' ,$id)->first();
+		$data->anoletivo_id=$data->anoletivo_id+1;
+		$data->ano=$data->ano+1;
+	
+
+			//echo json_encode($data);
+			var_dump($data);
+			echo '</pre>'; 
+		
+	
+
+
+		$existing_turma = $this->turmasModel
+		->where('ano', $data->ano)
+		->where('nome', $data->nome)
+		->where('anoletivo_id', $data->anoletivo_id)->first();
+
+		var_dump($existing_turma);
+
+		if (empty($existing_turma)) {
+			$this->turmasModel->insert($data); 
+			$id_turma_inserida = $this->turmasModel->insertID(); //devolve o ID da turma  inserida
+			$result = $this->turmalunoModel->findAlunosTurma($id);	
+
+			 foreach ($result as $key => $value) {	
+				
+			 	$dados['anoletivo_id'] = $data->anoletivo_id;
+			 	$dados['turma_id'] = $id_turma_inserida;
+				$dados['num_interno'] = $value->num_interno;
+			 	$this->turmalunoModel->insert($dados);
+
+			 }
+		 	$response['success'] = true;
+			$response['messages'] = "Dados exportados com sucesso, turma " . ($data->ano)-1 . " " . $data->nome . " para o ano letivo seguinte ";	
+				
+		 } else if(!empty($existing_turma)) {
+			$response['success'] = false;		 	
+			 $response['messages'] = "Turma já exportada";
+		}
+		else{
+			$response['success'] = false;
+			$response['messages'] = "Erro ao exportar turma";
+		}
+		return $this->response->setJSON($response);	
+	}
+
+
 	public function remove()
 	{
 		$response = array();

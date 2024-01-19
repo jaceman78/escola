@@ -4,19 +4,31 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Controllers\Turmas; //<-novo 17-11-23 
 
 use App\Models\TurmalunoModel;
+use App\Models\AlunoModel;
+use App\Models\TurmasModel;
+
+
 
 class Turmaluno extends BaseController
 {
 	
     protected $turmalunoModel;
+	protected $AlunoModel;
+	protected $TurmasModel;
     protected $validation;
+	protected $Turma; //<-novo 17-11-23
 	
 	public function __construct()
 	{
 	    $this->turmalunoModel = new TurmalunoModel();
+		$this->AlunoModel = new AlunoModel();
+		$this->TurmasModel = new TurmasModel();
        	$this->validation =  \Config\Services::validation();
+
+		$this->Turma= new Turmas(); //<-novo 17-11-23
 		
 	}
 	
@@ -50,10 +62,8 @@ class Turmaluno extends BaseController
 	// [profile_img] => ../imagens/default.png
 	// [email] => mariamatado@aejoaodebarros.pt
 	// [num_disciplinas] => 7
+	//[anoletivo] => 2012
 	}
-
-
-
 
 
 
@@ -114,29 +124,41 @@ class Turmaluno extends BaseController
 		$fields['anoletivo_id'] = $this->request->getPost('anoletivo_id');
 		$fields['turma_id'] = $this->request->getPost('turma_id');
 		$fields['num_interno'] = $this->request->getPost('num_interno');
-
-
-        $this->validation->setRules([
-			'anoletivo_id' => ['label' => 'Anoletivo id', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
-            'turma_id' => ['label' => 'Turma id', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
-            'num_interno' => ['label' => 'Num interno', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
-
-        ]);
-
+		$existe = $this->turmalunoModel->verseestainscrito($fields); //<-novo 17-11-23
+		if($existe!=null){
+			//echo "<pre>"; print_r($existe);
+			$response['success'] = false;
+			$response['messages'] = 'O aluno '. $fields['num_interno'].' já está inscrito neste letivo na turma '.$existe[0]->nometurma;
+			return $this->response->setJSON($response);
+		}
+		
+		$this->validation->setRules([
+			'anoletivo_id' => [
+				'label' => 'Anoletivo id',
+				'rules' => 'numeric|min_length[0]|max_length[11]'
+			],
+			'turma_id' => [
+				'label' => 'Turma id',
+				'rules' => 'numeric|min_length[0]|max_length[11]'
+			],
+			'num_interno' => [
+				'label' => 'num interno',
+				'rules' => 'required|numeric|min_length[5]|max_length[5]'
+			],
+		]);
+		
+		
         if ($this->validation->run($fields) == FALSE) {
-
+			
             $response['success'] = false;
 			$response['messages'] = $this->validation->getErrors();//Show Error in Input Form
 			
         } else {
 
-            if ($this->turmalunoModel->insert($fields)) {
-												
+            if ($this->turmalunoModel->insert($fields)) {							
                 $response['success'] = true;
                 $response['messages'] = lang("App.insert-success") ;	
-				
             } else {
-				
                 $response['success'] = false;
                 $response['messages'] = lang("App.insert-error") ;
 				
@@ -157,7 +179,7 @@ class Turmaluno extends BaseController
 
 
         $this->validation->setRules([
-			            'anoletivo_id' => ['label' => 'Anoletivo id', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
+			'anoletivo_id' => ['label' => 'Anoletivo id', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
             'turma_id' => ['label' => 'Turma id', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
             'num_interno' => ['label' => 'Num interno', 'rules' => 'permit_empty|numeric|min_length[0]|max_length[11]'],
 
@@ -186,6 +208,14 @@ class Turmaluno extends BaseController
         return $this->response->setJSON($response);	
 	}
 	
+
+
+
+
+
+
+
+
 	public function remove()
 	{
 		$response = array();

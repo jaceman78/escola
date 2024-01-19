@@ -25,6 +25,10 @@ class Disciplinas extends BaseController
 	
 	public function index()
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 	    $data = [
                 'controller'    	=> 'disciplinas',
                 'title'     		=> 'Disciplinas',
@@ -35,6 +39,10 @@ class Disciplinas extends BaseController
 	}
 	public function indexregular()
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 	    $data = [
                  'controller'    	=> 'disciplinas',
                  'title'     		=> 'Disciplinas Regular',
@@ -46,6 +54,10 @@ class Disciplinas extends BaseController
 
 	public function indexprofissional()
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 	    $data = [
                  'controller'    	=> 'disciplinas',
                  'title'     		=> 'Disciplinas Profissional',

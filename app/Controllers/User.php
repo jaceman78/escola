@@ -23,6 +23,10 @@ class User extends BaseController
 	
 	public function index()
 	{
+		if (!session()->get("LoggedUserData")) {
+			session()->setFlashData("Error", "Your session has expired. Please login again.");
+			return redirect()->to(base_url());
+		}
 
 	    $data = [
                 'controller'    	=> 'user',

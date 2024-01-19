@@ -20,7 +20,7 @@ class LoginController extends BaseController
 		$this->googleClient = new \Google_Client();
 		$this->googleClient->setClientId("633805044650-h6b92rq9i119gajei6fq1ot3bkn1j357.apps.googleusercontent.com");
 		$this->googleClient->setClientSecret("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");
-		$this->googleClient->setRedirectUri("http://localhost:8080/login/loginWithGoogle");
+		$this->googleClient->setRedirectUri("http://localhost/login/loginWithGoogle");
 		$this->googleClient->addScope("email");
 		$this->googleClient->addScope("profile");
 

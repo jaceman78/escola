@@ -119,7 +119,7 @@ $.get('/obter-dados-anoletivo', function (data) {
   var options = '';
   
     $.each(data, function (i, item) {          
-      options += data[i] + '">' + data[i+1] ;
+      options += data[i] + '">' + data[i+1] ; 
                     i++;
     });
 
@@ -317,6 +317,61 @@ $.get('/obter-dados-tipologia', function (data) {
 
     });
   }
+
+
+  function exportar(id_turma){
+
+Swal.fire({
+    title: "Exportar dados da turma",
+    text: 'Vai exportar os dados da turma para o ano letivo seguinte. Deseja continuar?' <?php $id_turma?> ,
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+
+    confirmButtonText: '<?= lang("App.confirm") ?>',
+    cancelButtonText: '<?= lang("App.cancel") ?>'
+  }).then((result) => {
+
+    if (result.value) {
+      $.ajax({
+        url: '<?php echo base_url($controller . "/exportar") ?>',
+        type: 'post',
+        data: {
+          id_turma : id_turma
+        },
+        dataType: 'json',
+        success: function(response) {
+
+          if (response.success === true) {
+            Swal.fire({
+              toast:true,
+              position: 'top-end',
+              icon: 'success',
+              title: response.messages,
+              showConfirmButton: false,
+              timer: 3000
+            }).then(function() {
+              $('#data_table').DataTable().ajax.reload(null, false).draw(false);
+            })
+          } else {
+            Swal.fire({
+              toast:false,
+              position: 'bottom-end',
+              icon: 'error',
+              title: response.messages,
+              showConfirmButton: false,
+              timer: 3000
+            })
+          }
+        }
+      });
+    }
+  })
+
+}
+
+
 
 
 
